@@ -1,0 +1,375 @@
+.visual{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url(../images/sub2_visualx2.png) right no-repeat;
+    background-size: cover;
+    left: 50%; transform: translate(-50%); z-index: -10;
+}
+
+.business7{
+    padding-bottom: 50px;
+}
+
+.business7 h2{
+    width: 100%;
+}
+
+.business7 h2 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.business7 h3 img{
+    width: 100%;
+}
+
+.business7{
+    width: 100%;
+    padding-top: 14px;
+}
+
+.business7 p{
+    font-size: 1em;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.business7 .more{
+    background: #ed8b00;
+    width: 33.33%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.business7 ul{
+    margin-top: 24px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.business7 ul li{
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+.business7 ul li:nth-of-type(4){
+    border:none;
+}
+
+/* .business7 ul li:nth-of-type(2), .business7 ul li:nth-of-type(4){
+    flex-direction: row-reverse;
+} */
+
+
+.business7 ul li span{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.business7 ul li span>img{
+    width: 100%;
+}
+
+.business7 ul li p{
+    width: 75%;
+    margin-left: 5%;
+    text-align: justify;
+    padding: 0;
+    font-size: 0.857em;
+}
+
+.business7 ul li:nth-of-type(2) p, .business7 ul li:nth-of-type(4) p{
+    margin-right: 5%;
+}
+
+.business8{
+    clear: both;
+    padding: 50px 0;
+    background: #f5f5f5;
+}
+
+.business8 h3{
+    font-size: 1.429em;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.business8 ul{
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 30px 0;
+}
+
+.business8 ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.business8 ul li a{
+    font-size: 1em;
+    padding: 8px 0;
+    color: #666;
+    background: #fff;
+    font-weight: 500;
+}
+
+.business8 .rice1{
+    width: 100%;
+}
+
+.business8 .rice1 h5{
+    font-size: 1.143em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.business8 .rice1 span{
+    width: 90%;
+    display: block;
+    margin: 24px auto;
+}
+
+.business8 .rice1 span>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.business8 .rice1 dl{
+    width: 90%;
+    overflow: hidden;
+    margin: 14px auto;
+}
+
+.business8 .rice1 dt{
+    float: left;
+    clear: left;
+    font-weight: 500;
+    width: 30%;
+    padding: 1px 0;
+}
+
+.business8 .rice1 dd{
+    float: left;
+    width: 70%;
+    padding: 1px 0;
+}
+
+.business8 .rice1 dd:nth-of-type(1){
+    color: #ed8b00;
+    font-weight: 500;
+}
+
+.business8 .rice1 dd:last-of-type{
+    clear: both;
+    width: 100%;
+    font-size: 0.857em;
+    text-align: justify;
+    margin: 14px 0;
+}
+
+.business8 .rice1 div{
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.business8 .rice1 div>p{
+    background: #ed8b00;
+    border-radius: 20px;
+    width: 30.33%;
+    float: left;
+    text-align: center;
+    line-height: 2.5em;
+    color: #fff;
+    font-size: 0.857em;
+}
+
+.business8 .rice2{
+    width: 100%;
+}
+
+.business8 .rice2 h5{
+    font-size: 1.143em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.business8 .rice2 span{
+    width: 90%;
+    display: block;
+    margin: 24px auto;
+}
+
+.business8 .rice2 span>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.business8 .rice2 dl{
+    width: 85%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 10px;
+    text-align: center;
+}
+
+.business8 .rice2 dt{
+    font-weight: 500;
+    padding: 1px 0;
+}
+
+.business8 .rice2 dd{
+    padding: 1px 0;
+    font-size: 1em;
+}
+
+.business8 .rice2 p{
+    font-size: 0.857em;
+    text-align: justify;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.business8 .rice2 p>span{
+    font-weight: 500;
+    margin: 0;
+    display: inline;
+    color: #ed8b00;
+}
+
+.business8 .rice2 div{
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.business8 .rice2 div>p{
+    background: #ed8b00;
+    border-radius: 20px;
+    width: 30.33%;
+    float: left;
+    text-align: center;
+    line-height: 2.5em;
+    color: #fff;
+}
+
+.business8 .rice3{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.business8 .rice3 h5{
+    font-size: 1.143em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.business8 .rice3 dl{
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    margin: 10px auto;
+    font-size: 0.857em;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.business8 .rice3 dt{
+    width: 85%;
+    float: left;
+    text-align: center;
+}
+
+.business8 .rice3 dd{
+    width: 15%;
+    text-align: center;
+    color: #ed8b00;
+    
+}
+
+.business8 .rice3 dd>i{
+    font-size: 1em;
+    text-align: center;
+}
+
+.business9{
+    clear: both;
+    padding: 50px 0;
+}
+
+.business9 h3{
+    font-size: 1.429em;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.business9 .swiper-container{
+    width: 100%;
+    position: relative;
+}
+
+.business9 .swiper-wrapper{
+    
+}
+
+.business9 .swiper-slide{
+    width: 100%;
+    
+}
+
+.business9 .swiper-slide dl{
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 0.857em;
+}
+
+.business9 .swiper-slide dt{
+    font-weight: 500;
+}
+
+.business9 .swiper-slide dd{
+    
+}
+
+.business9 .sub2_3{
+    position:inherit;
+    bottom: 0;
+}

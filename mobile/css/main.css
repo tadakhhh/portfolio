@@ -1,0 +1,498 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.visual .swiper-container {
+    width: 100%;
+    height: auto;
+}
+.visual .swiper-slide {
+    text-align: center;
+    background: #fff;
+}
+.visual{
+    position: relative;
+}
+.visual img{
+    width: 100%;
+}
+.visual p{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.85rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.visual p>span{
+    font-size: 1.71rem;
+}
+
+.visual p:nth-of-type(2){
+    font-size: 0.857em;
+    font-weight: 400;
+    position: absolute;
+    top: 360px;
+    left: 0;
+}
+
+.visual .swiper-slide::before{
+    content: '|';
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 245px;
+    font-size: 3.857em;
+    z-index: 5;
+    font-weight: 100;
+    text-align: center;
+}
+
+#wrap .visual .pagination1{
+    margin-bottom: 20px;
+}
+
+#wrap .visual .swiper-pagination-bullet-active {
+    background-color: #ed8b00;
+}
+.visual .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+/* ESG 경영 1 */
+
+.esg{
+    width: 100%;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.esg h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.esg p{
+    font-size: 0.857em;
+    text-align: center;
+    color: #666;
+    margin: 5px 0 14px 0
+}
+
+.esg ul{
+    overflow: hidden;
+    padding: 5px;
+}
+
+.esg ul li{
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    
+}
+
+.esg li img{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    box-sizing: border-box;
+    padding: 0 3px;
+}
+
+.esg li dl{
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.esg li dl dt{
+    font-weight: 500;
+}
+
+.esg li dl dd{
+    font-size: 0.857em;
+    color: #666;
+}
+
+/* 사업영역 */
+
+.business{
+    background: #f5f5f5;
+    padding-top: 50px;
+}
+
+.business h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.business>p{
+    font-size: 0.857em;
+    text-align: center;
+    color: #666;
+    margin: 5px 0 14px 0
+}
+
+.business .swiper2{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.business .swiper2 .swiper-slide{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.business .swiper2 .swiper-slide div:nth-of-type(1){
+    position: relative;
+}
+
+.business .swiper2 .swiper-slide img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.business .swiper2 .swiper-slide p{
+    background: rgba(0, 0, 0, .6);
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.143em;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.business .swiper2 dl{
+    margin-top: 10px;
+}
+
+.business .swiper2 dl dt{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.business .swiper2 dl dd{
+    font-size: 0.857em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.business .swiper-scrollbar2{
+    width: 100%;
+    height: 5px;
+    background: #f5f5f5;
+    padding-top: 50px;
+}
+
+.swiper-scrollbar-drag{
+    background: #ed8b00;
+}
+
+/* 공정과정 */
+
+.process{
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+}
+
+.process h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.process p{
+    font-size: 0.857em;
+    text-align: center;
+    color: #666;
+    margin: 5px 0 14px 0
+}
+
+.process .swiper3 .swiper-slide{
+    width: 100%;
+    transform: scale(.8);
+}
+
+.process .swiper3 .swiper-slide a{
+    z-index: 10;
+}
+
+.process .swiper3 .swiper-slide img{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    filter: brightness(50%);
+    z-index: 10;
+    position: relative;
+}
+
+.process .swiper3 .swiper-slide dl{
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.process .swiper3 .swiper-slide dl dt{
+    font-size: 1em;
+    font-weight: 500;
+    color: #ed8b00;
+}
+
+.process .swiper3 .swiper-slide dl dt>span{
+    color: #ed8b00;
+    padding: 0 5px;
+}
+
+.process .swiper3 .swiper-slide dl dd{
+    font-size: 0.857em;
+    color: #666;
+}
+
+.process .swiper3 .swiper-slide dl dd>span{
+    color: #ed8b00;
+    padding: 0 5px;
+}
+
+.process .swiper3 .swiper-slide-active{
+    width: 100%;
+    transform: scale(1);
+    transition: all .5s;
+}
+
+.process .swiper3 .swiper-slide-active dl{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.process .swiper3 .swiper-slide-active img{
+    filter: none
+}
+
+.next3{
+    position: absolute;
+    top: 220px;
+}
+
+.prev3{
+    position: absolute;
+    top: 220px;
+}
+
+:root{
+    --swiper-navigation-size: 25px;
+    --swiper-theme-color: #333;
+}
+
+.circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+.circle canvas {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.process .swiper3 .swiper-slide .circle canvas{
+    opacity: 0;
+}
+
+.process .swiper3 .swiper-slide-active .circle canvas{
+    opacity: 1;
+}
+
+/* 제품소개 */
+
+.feature{
+    padding: 50px 0;
+    background: #f5f5f5;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.feature h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.feature p{
+    font-size: 0.857em;
+    text-align: center;
+    color: #666;
+    margin: 5px 0 14px 0
+}
+
+.feature .features{
+    width: 100%;
+    overflow: hidden;
+}
+
+.feature ul{
+    width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.feature ul li{
+    width: 33.33%;
+    float: left;
+}
+
+.feature ul li>a{
+    text-align: center;
+    font-size: 1em;
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    color: #ccc;
+    margin-bottom: 24px;
+    line-height: 1.8em;
+}
+
+.feature .swiper4{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.feature .swiper4 .swiper-slide{
+    width: 60%;
+    display: block;
+}
+
+.feature .swiper4 img{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.feature .swiper4 dl{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.feature .swiper4 dl dt{
+    font-size: 1em;
+    font-weight: 500;
+    color: #ed8b00;
+}
+
+.feature .swiper4 dl dd{
+    font-size: 0.857em;
+    color: #666;
+    margin-bottom: 14px;
+}
+
+#wrap .pagination4{
+    position: absolute;
+    bottom: 0px;
+}
+
+#wrap .swiper-pagination-bullet-active{
+    background: #ed8b00;
+}
+
+#wrap .swiper-container-3d .swiper-slide-shadow-left, #wrap .swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+
+/* 오시는길 */
+.line_map{
+    position: relative;
+    padding: 50px 0;
+}
+
+.line_map h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.line_map p{
+    font-size: 0.857em;
+    text-align: center;
+    color: #666;
+    margin: 5px 0 14px 0
+}
+
+.line_map ul{
+    overflow: hidden;
+    width: 100%;
+}
+
+.line_map li:nth-of-type(1){
+    margin-top: 10px;
+}
+
+.line_map li{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    padding: 5px 0;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.line_map li a {
+    width: 100%;
+}
+
+.line_map li a dl{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1em;
+    width: 65%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.line_map li a dl dt{
+    width: 25%;
+    float: left;
+    clear: both;
+}
+
+.line_map li a dl dt img{
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.line_map li a dl dd{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    float: left;
+}

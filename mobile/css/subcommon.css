@@ -1,0 +1,81 @@
+/* 공통 비주얼 */
+
+.visual h3{
+    font-size: 1.286em;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* 서브메뉴 */
+
+.subNav{
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.subNav ul{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.subNav ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.subNav ul li a{
+    background: #fff;
+    color: #666;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.subNav ul li .current{
+    background: #ed8b00;
+    color: #fff;
+    font-weight: 500;
+}
+
+#content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content .titleArea{
+    overflow: hidden;
+    position: relative;
+    padding: 50px 0;
+}
+
+#content .titleArea h2{
+    font-size: 1.714em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content .titleArea p{
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#content .titleArea p::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: #ed8b00;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    border-radius: 5px;
+}

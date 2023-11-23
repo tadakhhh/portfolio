@@ -1,0 +1,338 @@
+.visual{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url(../images/sub4_visualx2.jpg) right no-repeat;
+    background-size: cover;
+    left: 50%; transform: translate(-50%); z-index: -10;
+}
+
+.titleArea h2{
+    width: 100%;
+}
+
+.titleArea h2 img{
+    width: 100%;
+}
+
+.main{
+    width: 90%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.main div{
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main div h3{
+    font-size: 1.429em;
+    text-align: left;
+    font-weight: 700;
+    color: #ed8b00;
+    float: left;
+    width: 70%;
+    padding-bottom: 14px;
+}
+
+/* .main div>span{
+    float: left;
+    width: 40%;
+    float: right;
+    padding-bottom: 14px;
+} */
+
+.main div>span{
+    float: left;
+    width: 30%;
+    float: right;
+}
+
+.main div>span img{
+    width: 100%;
+}
+
+.main>p:nth-of-type(1){
+    font-size: 1em;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.main>p:nth-of-type(2){
+    font-size: 0.857em;
+    text-align: left;
+    color: #666;
+    margin-top: 10px;
+    clear: both;
+}
+
+.main>p:nth-of-type(2)>span{
+    color: #ed8b00;
+}
+
+.restore{
+    width: 100%;
+    position: relative;
+}
+
+.restore h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 24px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content .mySwiper{
+    width: 100%; 
+    background: #f5f5f5;  
+}
+
+#content .mySwiper .swiper-slide-thumb-active{
+    background: #ed8b00;
+    color: #fff;
+    opacity: 1;
+}
+
+.mySwiper .swiper-slide{
+    width: 90%;
+    opacity: .5;
+    border-radius: 3px;
+}
+
+.mySwiper .swiper-slide p{
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding: 3px 0;
+}
+
+#content .mySwiper2{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    padding: 0;
+}
+
+.mySwiper2 .swiper-slide{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* .mySwiper2 .swiper-slide>p{
+    font-size: 1em;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+} */
+
+.mySwiper2 .swiper-slide div:nth-of-type(1){
+    width: 100%;
+    padding: 50px 0;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(1)>span:nth-of-type(2){
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(1)>span:nth-of-type(2)>img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .baekseju h3{
+    font-size: 1.429em;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+} */
+
+.mySwiper2 .swiper-slide div:nth-of-type(1)>p{
+    font-size: 0.857em;
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(2)>span:nth-of-type(1){
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 14px;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(2)>span:nth-of-type(1) img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(2)>p{
+    font-size: 1em;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(2)>p>span{
+    font-size: 0.857em;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(1) div:nth-of-type(2)>p>span{
+    color: #6f2a2d;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(2) div:nth-of-type(2)>p>span{
+    color: #1d3655;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(3) div:nth-of-type(2)>p>span{
+    color: #543f2c;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(4) div:nth-of-type(2)>p>span{
+    color: #a05809;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(5) div:nth-of-type(2)>p>span{
+    color: #314525;
+}
+
+
+.mySwiper2 .swiper-slide div:nth-of-type(2){
+    width: 100%;
+    position: relative;
+    padding: 25px 0;
+    background: #f5f5f5;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(3){
+    width: 100%;
+    position: relative;
+    padding: 25px 0 50px 0;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(3) dl{
+    width: 90%;
+    font-size: 0.857em;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(3) dt{
+    font-weight: 500;
+    float: left;
+    clear: both;
+    width: 20%;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(3) dd{
+    float: left;
+    width: 80%;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(3) a{
+    width: 30%;
+    background: #fff;
+    color: #666;
+    height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 0.857em;
+    line-height: 2em;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+
+.mySwiper2 .swiper-slide div:nth-of-type(4){
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(4)>span{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 24px;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(4)>span>img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(4) p:nth-of-type(1){
+    font-size: 1.286em;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 24px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(4) p:nth-of-type(n+2){
+    width: 85%;
+    text-align: justify;
+    color: #333;
+    padding-bottom: 14px;
+    font-size: 0.857em;
+    margin: 0 auto;
+}
+
+.mySwiper2 .swiper-slide div:nth-of-type(4) p:nth-of-type(2)>span{
+    color: #6f2a2d;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: inline;
+    font-weight: 500;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(2) div:nth-of-type(4) p:nth-of-type(2)>span{
+    color: #1d3655;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(3) div:nth-of-type(4) p:nth-of-type(2)>span{
+    color: #543f2c;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(4) div:nth-of-type(4) p:nth-of-type(2)>span{
+    color: #a05809;
+}
+
+.mySwiper2 .swiper-slide:nth-of-type(5) div:nth-of-type(4) p:nth-of-type(2)>span{
+    color: #314525;
+}
