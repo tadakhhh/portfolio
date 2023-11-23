@@ -1,0 +1,2219 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#videoBG {
+   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+  
+}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+
+
+
+/* #content{ width:96%; margin:0 2%; height:3000px; background:rgba(0, 0, 0, .9);  } */
+#content{ width:100%; margin:0; height:auto; background:none;}
+.more{position: absolute; right: 150px; top: 115px;}
+
+.about{
+   width: 100%;
+   height: auto;
+   padding: 100px 150px;
+   box-sizing: border-box;
+   background: #fff;
+   position: relative;
+}
+.about_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(6, 1fr);
+   grid-auto-rows: 170px;
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 10px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a a b b b b'
+   'c e b b b b'
+   'c e b b b b'
+   'd f f g g g'
+   'd h i g g g';
+}
+.about_con li{
+   line-height: normal;
+}
+.img1{
+   grid-area: a;
+   background: url(../images/about_a.png) center no-repeat;
+   background-size: contain;
+}
+.img2{
+   grid-area: b;
+}
+.img2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.img3{
+   grid-area: c;
+   border: 1px solid #ccc;
+   background: url(../images/about_c.jpg) center no-repeat;
+   background-size: contain;
+}
+.img3 strong{
+   display: none;
+}
+.img3 a{
+   display: none;
+}
+.img4{
+   grid-area: d;
+   border: 1px solid #ccc;
+}
+.img4 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   
+}
+.img5{
+   grid-area: e;
+   position: relative;
+}
+.img5 div{
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   overflow: hidden;
+}
+.img5 i{
+   font-size: 1.944em;
+   color: #333;
+   display: block; 
+   text-align: center;
+   padding: 5px 0;
+}
+.img6{
+   grid-area: f;
+   position: relative;
+}
+.img6 p{
+   position: absolute;
+   font-weight: 600;
+   font-size: 2.222em;
+   top: 50%;
+   left: 10%;
+   transform: translate(-10%,-50%);
+   line-height: 1em;
+}
+.img7{
+   grid-area: g;
+}
+.img7 strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   line-height: 1.5em;
+   float: left;
+}
+.img7>.more{
+   overflow: hidden;
+   padding: 25px 0 0 30px;
+   position: static;
+}
+.button--brightness span{
+   display: block;
+}
+.button--brightness {
+   color: #333;
+   background-color: transparent;
+   border: 2px solid #333;
+   border-radius: 5px;
+   overflow: hidden;
+   transition: all .7s;
+   text-align: center;
+   font-size: 1.333em;
+   font-weight: 500;
+   width: 100px;
+   height: 35px;
+   line-height: 1.4em;
+ }
+ .button--brightness:before, .button--brightness:after {
+   content: "";
+   position: absolute;
+   width: 60px;
+   height: 100%;
+   border-radius: 5px;
+   filter: blur(15px);
+   opacity: 0;
+ }
+ .button--brightness:before {
+   top: 0;
+   left: 0;
+   background-color: rgba(255, 255, 255, 0.5);
+   transform: translate3d(-150%, 0, 0) skew(-15deg);
+ }
+ .button--brightness:after {
+   top: 0;
+   left: 30px;
+   width: 30px; 
+   background-color: #fff;
+   transform: translate3d(-100px, 0, 0) skew(-15deg);
+ }
+ .button--brightness:hover {
+   color: #fff;
+   border: 2px solid #b34142;
+   background-color: #b34142;
+   transition: background-color .1s, color .7s .1s, border .7s;
+ }
+.img7 p{
+   font-size: 1.222em;
+   font-weight: 500;
+   text-align: justify;
+   line-height: 1.1em;
+   clear: both;
+}
+.img7 p:nth-of-type(1){
+   padding-bottom: 10px;
+}
+.img8{
+   grid-area: h;
+}
+.img8 dl, .img9 dl{
+   width: 90%;
+   margin: 0 auto;
+   text-align: left;
+}
+.img8 dl dt, .img9 dl dt{
+   font-weight: 700;
+   padding-bottom: 10px;
+   font-size: 1.389em;
+}
+.img8 dl dd, .img9 dl dd{
+   font-weight: 500;
+   font-size: 1em;
+   color: #666;
+}
+.img9{
+   grid-area: i;
+}
+.character>.more{
+   background: none;
+   transition: none;
+}
+.character{
+   width: 100%;
+   height: 950px;
+   padding: 100px 0;
+   box-sizing: border-box;
+   position: relative;
+   background: #fffdf5;
+}
+.character .backg{
+   width: 100%;
+   height: 950px;
+   padding: 100px 0;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+}
+.character>strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   float: left;
+   padding:0 50px 0 150px;
+}
+.character>p{
+   font-size: 1.389em;
+   line-height: 3em;
+   color: #333;
+   font-weight: 600;
+}
+.chag{
+   overflow: hidden;
+   width: 100%;
+}
+.chag span{
+   width: 30%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+}
+.chag span:nth-of-type(1){
+   bottom: 0;
+   left: 60%;
+}
+.chag span:nth-of-type(2){
+   bottom: 0;
+   left: 0%;
+}
+.chag span:nth-of-type(3){
+   bottom: 0;
+   right: 10%;
+}
+.chag span:nth-of-type(4){
+   bottom: 0;
+   left: 25%;
+}
+.chag span:nth-of-type(5){
+   bottom: 0;
+   left: 10%;
+}
+.chag span img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.character_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(5, 1fr);
+   /* grid-auto-rows: 360px; */
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 0px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a b c d e';
+}
+.character ul{
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translate(-50%,-70%);
+   height: 70%;
+}
+.character li{
+   width: 100%;
+   height: 100%;
+   padding: 20px 5px;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.character li a{
+   border-radius: 5px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.character li a>p{
+   width: 90%;
+   margin: 0 auto;
+   font-size: 1.389em;
+   font-weight: 500;
+   padding-top: 100px;
+}
+.character li a dl{
+   width: 90%;
+   height: 100%;
+   margin: 0 auto;
+}
+.character li a dl dt{
+   font-size: 2.778em;
+   font-family: 'Anton', sans-serif;
+   line-height: 1.2em;
+   border-bottom: 2px solid #333;
+   padding-bottom: 30px;
+}
+.character li a dl dd:nth-of-type(1){
+   font-size: 4.444em;
+   font-family: 'Alumni Sans Collegiate One', sans-serif;
+   line-height: 1.2em;
+   padding-bottom: 15px;
+}
+.character li a dl dd:nth-of-type(2){
+   width: 100%;
+   font-size: 1.222em;
+   line-height: 1.2em;
+   text-align: left;
+   line-height: 1.2em;
+
+}
+.trailer .button--brightness {
+   color: #fff;
+   border: 2px solid #fff;
+ }
+.trailer  .button--brightness:after {
+   background-color: #333;
+}
+.trailer{
+   width: 100%;
+   height: auto;
+   padding: 100px 150px;
+   box-sizing: border-box;
+   position: relative;
+   background: rgba(0, 0, 0, .9);
+   overflow: hidden;
+}
+.trailer strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   float: left;
+   padding: 0 50px 100px 0;
+   color: #fff;
+}
+.trailer>p{
+   font-size: 1.389em;
+   line-height: 3em;
+   color: #fff;
+   font-weight: 600;
+}
+.trailer .mySwiper2{
+   width: 100%;
+   position:relative;
+   overflow: hidden;
+}
+.trailer .mySwiper2 .swiper-wrapper{
+   width: 100%;
+}
+.trailer .mySwiper2 .swiper-slide{
+   float:left;
+   display:flex;
+   overflow: hidden;
+}
+.mySwiper2 .swiper-slide a{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide a img{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl{
+   width: 50%;
+   text-align: center;
+   color: #fff;
+}
+.mySwiper2 .swiper-slide dl dt{
+   padding-top: 30px;
+   font-size: 3.125vw;
+   font-family: 'Anton', sans-serif;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(1){
+   font-size: 2.500vw;
+   font-family: 'Anton', sans-serif;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(2){
+   font-size: 1.875vw;
+   font-family: 'Anton', sans-serif;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(3){
+   font-size: 1.313vw;
+   padding: 30px 0;
+   font-weight: 600;
+}
+#content .mySwiper{
+   padding-top: 50px;
+   width: 100%;
+   overflow: hidden;
+}
+.mySwiper .swiper-wrapper{
+   width: 100%;
+}
+.mySwiper .swiper-slide{
+   width: 100%;
+   filter: brightness(50%);
+}
+#content .mySwiper .swiper-slide-thumb-active{
+   filter: brightness(100%);
+}
+.mySwiper .swiper-slide span{
+   width: 100%;
+}
+.mySwiper .swiper-slide span>img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery{
+   width: 100%;
+   padding: 100px 150px 150px 150px;
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+   background: #fffdf5;
+}
+.gallery strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   float: left;
+   padding:0 50px 100px 0;
+}
+.gallery>p{
+   font-size: 1.389em;
+   line-height: 3em;
+   font-weight: 600;
+}
+.gallery_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(5, 1fr);
+   /* grid-auto-rows: 170px; */
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 10px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a a b b h'
+   'a a c d i'
+   'e f f g i';
+}
+.gallery_con li:nth-of-type(1){
+   grid-area: a;
+}
+.gallery_con li:nth-of-type(2){
+   grid-area: b;
+}
+.gallery_con li:nth-of-type(3){
+   grid-area: c;
+}
+.gallery_con li:nth-of-type(4){
+   grid-area: d;
+}
+.gallery_con li:nth-of-type(5){
+   grid-area: e;
+}
+.gallery_con li:nth-of-type(6){
+   grid-area: f;
+}
+.gallery_con li:nth-of-type(7){
+   grid-area: g;
+}
+.gallery_con li:nth-of-type(8){
+   grid-area: h;
+}
+.gallery_con li:nth-of-type(9){
+   grid-area: i;
+}
+.gallery li a{
+   
+}
+.gallery li a img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery>span{
+   font-size: 2.778em;
+   font-weight: 400;
+   color: #333;
+   bottom: 60px;
+   font-family: 'Alumni Sans Collegiate One', sans-serif;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%,0);
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+#content{ width:100%; margin:0; height:auto; background:none;}
+.more{position: absolute; right: 100px; top: 115px;}
+
+.about{
+   width: 100%;
+   height: auto;
+   padding: 100px 100px;
+   box-sizing: border-box;
+   background: #fff;
+   position: relative;
+}
+.img7>.more{
+   overflow: hidden;
+   padding: 23px 0 0 30px;
+   position: static;
+}
+.button--brightness span{
+   display: block;
+}
+.img7 p{
+   font-size: 1.111em;
+   font-weight: 500;
+   text-align: justify;
+   line-height: 1.1em;
+   clear: both;
+}
+.character>strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   float: left;
+   padding:0 50px 0 100px;
+}
+.character>p{
+   font-size: 1.278em;
+   line-height: 3em;
+   color: #333;
+   font-weight: 600;
+}
+.chag span{
+   width: 35%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+}
+.character li a{
+   border-radius: 5px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.character li a>p{
+   width: 90%;
+   margin: 0 auto;
+   font-size: 1.389em;
+   font-weight: 500;
+   padding-top: 100px;
+}
+.trailer{
+   width: 100%;
+   height: auto;
+   padding: 100px 100px;
+   box-sizing: border-box;
+   position: relative;
+   background: rgba(0, 0, 0, .9);
+   overflow: hidden;
+}
+.trailer strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   float: left;
+   padding: 0 50px 80px 0;
+   color: #fff;
+}
+.trailer>p{
+   font-size: 1.278em;
+   line-height: 3em;
+   color: #fff;
+   font-weight: 600;
+}
+.gallery{
+   width: 100%;
+   padding: 100px 100px 125px 100px;
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+   background: #fffdf5;
+}
+.gallery strong{
+   font-size: 2.778em;
+   font-weight: 800;
+   float: left;
+   padding:0 50px 80px 0;
+}
+.gallery>p{
+   font-size: 1.278em;
+   line-height: 3em;
+   font-weight: 600;
+}
+.gallery li a img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery>span{
+   font-size: 2.778em;
+   font-weight: 400;
+   color: #333;
+   bottom: 40px;
+   font-family: 'Alumni Sans Collegiate One', sans-serif;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%,0);
+}
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+html{font-size: 18px;}
+
+#content{ width:auto; margin: 0;}
+.more{position: absolute; right: 80px; top: 113px;}
+
+.about{
+   padding: 100px 80px;
+}
+.about_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   grid-auto-rows: 170px;
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 0px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a b b'
+   'c b b'
+   'g g g';
+}
+.about_con li{
+   line-height: normal;
+}
+.img1{
+   grid-area: a;
+   background: url(../images/about_a.png) top no-repeat;
+   background-size: contain;
+}
+.img2{
+   grid-area: b;
+}
+.img2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.img3{
+   grid-area: c;
+   border: none;
+   background: none;
+}
+.img3 strong{
+   display: block;
+   font-size: 2.222em;
+   font-weight: 800;
+   line-height: 1em;
+   float: left;
+   padding-top: 100px;
+}
+.img3 a{
+   display: block;
+   overflow: hidden;
+   padding: 110px 0 0 50px;
+   position: static;
+}
+.img4{
+   grid-area: d;
+   display: none;
+}
+.img5{
+   grid-area: e;
+   display: none;
+}
+.img6{
+   grid-area: f;
+   display: none;
+}
+.img7{
+   grid-area: g;
+}
+.img7 strong{
+   display: none;
+}
+.img7>.more{
+   display: none;
+}
+.button--brightness span{
+   line-height: 1.4em;
+}
+.button--brightness {
+   width: 100px;
+   height: 30px;
+   line-height: 1em;
+   font-size: 1.111em;
+}
+.img7 p{
+   padding-top: 20px;
+   font-size: 1.111em;
+}
+.img7 p:nth-of-type(1){
+   padding-bottom: 0px;
+}
+.img7 p:nth-of-type(2){
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.img8{
+   grid-area: h;
+   display: none;
+}
+.img9{
+   grid-area: i;
+   display: none;
+}
+.character{
+   padding: 100px 0;
+   height: auto;
+   overflow: hidden;
+}
+.character .backg{
+   width: 100%;
+   height: 100%;
+   padding: 100px 0;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+}
+.character>strong{
+   font-size: 2.222em;
+   padding:0 50px 0 80px;
+}
+.character>p{
+   font-size: 1.167em;
+   line-height: 3em;
+   padding-bottom: 40px;
+}
+.chag span{
+   width: 42%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+}
+.chag span:nth-of-type(1){
+   bottom: 0;
+   left: 45%;
+}
+.chag span:nth-of-type(2){
+   bottom: 0;
+   left: 45%;
+}
+.chag span:nth-of-type(3){
+   bottom: 0;
+   left: 45%;
+}
+.chag span:nth-of-type(4){
+   bottom: 0;
+   left: 45%;
+}
+.chag span:nth-of-type(5){
+   bottom: 0;
+   left: 45%;
+}
+.chag span img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.character_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(1, 1fr);
+   grid-auto-rows: 134px;
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 0px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a'
+   'b'
+   'c'
+   'd'
+   'e';
+}
+.character ul{
+   position: sticky;
+   top: unset;
+   left: unset;
+   transform: unset;
+}
+.character li{
+   width: 100%;
+   padding: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.character li a{
+   width: 100%;
+   position: relative;
+}
+.character li a>p{
+   width: 100%;
+   font-size: 1.222em;
+   text-align: right;
+   line-height: 1em;
+   padding: 10px 80px 0 80px;
+   box-sizing: border-box;
+}
+.character li a dl{
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content:unset;
+   flex-direction: row;
+}
+.character li a dl dt{
+   width: 20%;
+   height: 100%;
+   font-size: 2.222em;
+   line-height: 1em;
+   float: left;
+   padding-bottom: 10px;
+   margin-left: 80px;
+}
+.character li a dl dd:nth-of-type(1){
+   width: 10%;
+   line-height: 1.2em;
+   padding-bottom: 0px;
+   text-align: center;
+}
+.character li a dl dd:nth-of-type(2){
+   width: 50%;
+   margin: 0 5%;
+   font-size: 1.000em;
+   padding-top: 0px;
+   margin-right: 80px;
+   text-align: justify;
+}
+.trailer{
+   padding: 100px 80px;
+}
+.trailer strong{
+   font-size: 2.222em;
+   padding: 0 50px 0 0;
+}
+.trailer>p{
+   font-size: 1.167em;
+   line-height: 3em;
+   padding-bottom: 40px;
+}
+.trailer .mySwiper2{
+   width: 100%;
+   position:relative;
+   overflow: hidden;
+}
+.trailer .mySwiper2 .swiper-wrapper{
+   width: 100%;
+}
+.trailer .mySwiper2 .swiper-slide{
+   float:left;
+   display:flex;
+   overflow: hidden;
+}
+.mySwiper2 .swiper-slide a{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide a img{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl dt{
+   padding-top: 35px;
+   font-size: 3.906vw;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(1){
+   font-size: 2.930vw;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(2){
+   font-size: 2.441vw;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(3){
+   font-size: 1.758vw;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(n+4){
+   display: none;
+}
+#content .mySwiper{
+   padding-top: 30px;
+}
+.mySwiper .swiper-slide{
+}
+.gallery{
+   padding: 100px 80px 150px 80px;
+}
+.gallery strong{
+   font-size: 2.222em;
+   padding:0 50px 0 0;
+}
+.gallery>p{
+   font-size: 1.167em;
+   line-height: 3em;
+   padding-bottom: 40px;
+}
+.gallery_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(4, 1fr);
+   /* grid-auto-rows: 170px; */
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 10px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a a b b'
+   'a a c d'
+   'e f f g';
+}
+.gallery_con li:nth-of-type(8){
+   grid-area: h;
+   display: none;
+}
+.gallery_con li:nth-of-type(9){
+   grid-area: i;
+   display: none;
+}
+.gallery li a{
+   
+}
+.gallery li a img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery>span{
+   font-size: 2.500em;
+   bottom: 50px;
+}
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+#content{ width:auto; margin: 0;}
+.more{position: absolute; right: 50px; top: 90px;}
+
+.about{
+   padding: 80px 50px;
+}
+.img3{
+   grid-area: c;
+   border: none;
+   background: none;
+}
+.img3 strong{
+   display: block;
+   font-size: 2.222em;
+   font-weight: 800;
+   line-height: 1em;
+   float: left;
+   padding-top: 135px;
+}
+.img3 a{
+   display: block;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   top: 180px;
+   left: 160px;
+}
+.img7 p:nth-of-type(2){
+   display: none;
+}
+.button--brightness span{
+   line-height: 1.2em;
+}
+.button--brightness {
+   width: 85px;
+   height: 25px;
+   line-height: 1em;
+   font-size: 1.111em;
+}
+.character{
+   padding: 80px 0;
+   height: auto;
+   overflow: hidden;
+}
+.character .backg{
+   width: 100%;
+   height: 100%;
+   padding: 80px 0;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+}
+.character>strong{
+   font-size: 2.222em;
+   padding:0 0px 0 50px;
+}
+.character>p{
+   clear: both;
+   font-size: 1.167em;
+   line-height: 1.8em;
+   padding: 0 0 35px 50px;
+}
+.chag span{
+   width: 55%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+}
+.chag span:nth-of-type(1){
+   bottom: 0;
+   left: 40%;
+}
+.chag span:nth-of-type(2){
+   bottom: 0;
+   left: 40%;
+}
+.chag span:nth-of-type(3){
+   bottom: 0;
+   left: 40%;
+}
+.chag span:nth-of-type(4){
+   bottom: 0;
+   left: 40%;
+}
+.chag span:nth-of-type(5){
+   bottom: 0;
+   left: 40%;
+}
+.character_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(1, 1fr);
+   grid-auto-rows: 133px;
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 0px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a'
+   'b'
+   'c'
+   'd'
+   'e';
+}
+.character li a>p{
+   width: 100%;
+   font-size: 1.222em;
+   text-align: right;
+   line-height: 1em;
+   padding: 10px 50px 0 80px;
+   box-sizing: border-box;
+}
+.character li a dl{
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content:unset;
+   flex-direction: row;
+}
+.character li a dl dt{
+   width: 25%;
+   height: 100%;
+   font-size: 2.222em;
+   line-height: 1em;
+   float: left;
+   padding-bottom: 10px;
+   margin-left: 50px;
+}
+.character li a dl dd:nth-of-type(1){
+   width: 10%;
+   line-height: 1.2em;
+   padding-bottom: 0px;
+   text-align: center;
+}
+.character li a dl dd:nth-of-type(2){
+   width: 50%;
+   margin: 0 auto;
+   font-size: 0.889em;
+   padding-top: 0px;
+   margin-right: 50px;
+   text-align: justify;
+}
+.trailer{
+   padding: 80px 50px;
+}
+.trailer strong{
+   font-size: 2.222em;
+   padding: 0 50px 0 0;
+}
+.trailer>p{
+   padding-bottom: 40px;
+   clear: both;
+   font-size: 1.167em;
+   line-height: 1.8em;
+}
+.mySwiper2 .swiper-slide dl dt{
+   padding-top: 30px;
+   font-size: 3.906vw;
+}
+#content .mySwiper{
+   padding-top: 30px;
+}
+.gallery{
+   padding: 80px 50px 100px 50px;
+}
+.gallery strong{
+   font-size: 2.222em;
+   padding:0 50px 0 0;
+}
+.gallery>p{
+   padding-bottom: 40px;
+   clear: both;
+   font-size: 1.167em;
+   line-height: 1.8em;
+}
+.gallery>span{
+   font-size: 2.500em;
+   bottom: 30px;
+}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+html{font-size: 16px;}
+
+#content{ width:100%; margin:0; height:auto; background:none;}
+.more{position: absolute; right: 50px; top: 87px;}
+
+.about{
+   padding: 80px 50px;
+}
+.about_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(1, 1fr);
+   grid-auto-rows: 170px;
+   grid-gap: 0px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a'
+   'b'
+   'b'
+   'g';
+}
+.about_con li{
+   line-height: normal;
+}
+.img1{
+   grid-area: a;
+   background: url(../images/about_a.png) top no-repeat;
+   background-size: contain;
+}
+.img2{
+   grid-area: b;
+}
+.img2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.img3{
+   grid-area: c;
+   display: none;
+}
+.img4{
+   grid-area: d;
+   display: none;
+}
+.img5{
+   grid-area: e;
+   display: none;
+}
+.img6{
+   grid-area: f;
+   display: none;
+}
+.img7{
+   grid-area: g;
+}
+.img7 strong{
+   display: block;
+   font-size: 2.188em;
+   padding-top: 10px;
+}
+.img7>.more{
+   display: block;
+   padding: 0px;
+   padding: 20px 0 0 50px;
+   box-sizing: border-box;
+}
+.button--brightness {
+   width: 80px;
+   height: 25px;
+   line-height: 1.3em;
+}
+.img7 p{
+   padding-top: 10px;
+   font-size: 1em;
+}
+.img7 p:nth-of-type(1){
+   padding-bottom: 0px;
+}
+.img7 p:nth-of-type(2){
+   display: none;
+}
+.img8{
+   grid-area: h;
+   display: none;
+}
+.img9{
+   grid-area: i;
+   display: none;
+}
+.character{
+   padding: 80px 0;
+   height: auto;
+   overflow: hidden;
+}
+.character .backg{
+   width: 100%;
+   height: 100%;
+   padding: 100px 0;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+}
+.character>strong{
+   font-size: 2.188em;
+   padding:0 0 0 50px;
+}
+.character>p{
+   font-size: 3.333vw;
+   line-height: 1em;
+   padding: 10px 0 50px 50px;
+   clear: both;
+}
+.chag span{
+   width: 31.5%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+   
+}
+.chag span:nth-of-type(1){
+   bottom: 0;
+   left: 65%;
+}
+.chag span:nth-of-type(2){
+   bottom: 0;
+   left: 62%;
+}
+.chag span:nth-of-type(3){
+   bottom: 0;
+   left: 40%;
+}
+.chag span:nth-of-type(4){
+   bottom: 0;
+   left: 49%;
+}
+.chag span:nth-of-type(5){
+   bottom: 0;
+   left: 65%;
+}
+.chag span img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.character_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   grid-auto-rows: 180px;
+   grid-gap: 5px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a b c'
+   'd e f';
+}
+.character ul{
+   position: sticky;
+   top: unset;
+   left: unset;
+   transform: unset;
+   width: 85%;
+   margin: 0 auto;
+}
+.character li{
+   width: 100%;
+   padding: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.character li a{
+   width: 100%;
+   position: relative;
+}
+.character li a>p{
+   width: 100%;
+   font-size: 1.125em;
+   text-align: left;
+   line-height: 1em;
+   padding: 10px 0px 10px 10px;
+   box-sizing: border-box;
+}
+.character li a dl{
+   width: 90%;
+   margin: 0 auto;
+   display:unset;
+}
+.character li a dl dt{
+   width: 100%;
+   height: auto;
+   font-size: 5.469vw;
+   line-height: 1em;
+   float: none;
+   padding-bottom: 10px;
+   margin-left: 0px;
+   margin: 0 auto;
+}
+.character li a dl dd:nth-of-type(1){
+   width: 100%;
+   line-height: 1.2em;
+   padding: 0 10px 0 0px;
+   text-align: left;
+   font-size: 7.813vw;
+}
+.character li a dl dd:nth-of-type(2){
+   width: 90%;
+   margin: 0%;
+   font-size: 2.500vw;
+   padding-top: 0px;
+   margin-right: 0px;
+   text-align: left;
+   clear: both;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+}
+.trailer{
+   padding: 80px 50px;
+}
+.trailer strong{
+   font-size: 2.188em;
+   padding: 0 30px 0 0;
+}
+.trailer>p{
+   font-size: 3.333vw;
+   line-height: 1em;
+   padding:10px 0 50px 0;
+   clear: both;
+}
+.trailer .mySwiper2{
+   width: 100%;
+   position:relative;
+   overflow: hidden;
+}
+.trailer .mySwiper2 .swiper-wrapper{
+   width: 100%;
+}
+.trailer .mySwiper2 .swiper-slide{
+   float:left;
+   display:flex;
+   overflow: hidden;
+   flex-direction: column;
+}
+.mySwiper2 .swiper-slide a{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide a img{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl dt{
+   padding-top: 30px;
+   font-size: 5.469vw;
+   float: left;
+   width: 20%;
+   text-align: left;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(1){
+   font-size: 3.906vw;
+   float: left;
+   width: 60%;
+   padding-top: 40px;
+   text-align: center;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(2){
+   font-size: 3.125vw;
+   float: left;
+   width: 20%;
+   padding-top: 45px;
+   text-align: right;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(3){
+   font-size: 2.813vw;
+   font-weight: 500;
+   clear: both;
+   padding: 0px 0;
+   text-align: center;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(n+4){
+   display: none;
+}
+#content .mySwiper{
+   padding-top: 20px;
+}
+.mySwiper .swiper-slide{
+   margin-right: 0px;
+}
+.gallery{
+   padding: 80px 50px 100px 50px;
+}
+.gallery strong{
+   font-size: 2.188em;
+   padding:0 50px 0 0;
+}
+.gallery>p{
+   font-size: 3.333vw;
+   line-height: 1em;
+   padding: 10px 0 50px 0px;
+   clear: both;
+}
+.gallery_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   grid-gap: 5px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a a d'
+   'a a c'
+   'e f f';
+}
+.gallery_con li:nth-of-type(2){
+   grid-area: b;
+   display: none;
+}
+.gallery_con li:nth-of-type(7){
+   grid-area: g;
+   display: none;
+}
+.gallery li a{
+   
+}
+.gallery li a img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery>span{
+   font-size: 2.500em;
+   bottom: 30px;
+}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:480px) {
+html{font-size: 14px;}
+
+#content{ width:100%; margin:0; height:auto; background:none;}
+.more{position: absolute; right: 35px; top: 75px; font-size: 1.143em;}
+
+.about{
+   padding: 65px 35px;
+}
+.about_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(1, 1fr);
+   grid-auto-rows: 200px;
+   grid-gap: 0px;
+   box-sizing: border-box;
+   overflow: hidden;
+
+   grid-template-areas: 
+   'a'
+   'b'
+   'g';
+}
+.about_con li{
+   line-height: normal;
+}
+.img1{
+   grid-area: a;
+   background: url(../images/about_a.png) center no-repeat;
+   background-size: contain;
+}
+.img2{
+   grid-area: b;
+}
+.img2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.img3{
+   grid-area: c;
+   display: none;
+}
+.img4{
+   grid-area: d;
+   display: none;
+}
+.img5{
+   grid-area: e;
+   display: none;
+}
+.img6{
+   grid-area: f;
+   display: none;
+}
+.img7{
+   grid-area: g;
+}
+.img7 strong{
+   display: block;
+   font-size: 2.500em;
+   padding-top: 10px;
+}
+.img7>.more{
+   display: block;
+   padding: 0px;
+   padding: 23px 0 0 35px;
+   box-sizing: border-box;
+}
+.button--brightness>span{
+   display: block;
+   font-size: 1.000em;
+   line-height: 1.2em;
+}
+.button--brightness {
+   width: 70px;
+   height: 23px;
+   line-height: 1.1em;
+   display: block;
+}
+.img7 p{
+   padding-top: 10px;
+   font-size: 1.214em;
+}
+.img7 p:nth-of-type(1){
+   padding-bottom: 0px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 6;
+   -webkit-box-orient: vertical;
+}
+.img7 p:nth-of-type(2){
+   display: none;
+}
+.img8{
+   grid-area: h;
+   display: none;
+}
+.img9{
+   grid-area: i;
+   display: none;
+}
+.character{
+   padding: 65px 0px;
+   height: auto;
+   overflow: hidden;
+}
+.character .backg{
+   width: 100%;
+   height: 100%;
+   padding: 65px 0;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+}
+.character>strong{
+   font-size: 2.500em;
+   padding:0 0 0 35px;
+}
+.character>p{
+   font-size: 3.750vw;
+   line-height: 1em;
+   padding: 10px 0 40px 35px;
+   clear: both;
+}
+.chag span{
+   width: 41%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+   
+}
+.chag span:nth-of-type(1){
+   bottom: 0;
+   left: 60%;
+}
+.chag span:nth-of-type(2){
+   bottom: 0;
+   left: 61%;
+}
+.chag span:nth-of-type(3){
+   bottom: 0;
+   left: 36%;
+}
+.chag span:nth-of-type(4){
+   bottom: 0;
+   left: 44%;
+}
+.chag span:nth-of-type(5){
+   bottom: 0;
+   left: 62%;
+}
+.chag span img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.character_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   grid-auto-rows: 180px;
+   grid-gap: 5px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a b c'
+   'd e f';
+}
+.character ul{
+   position: sticky;
+   top: unset;
+   left: unset;
+   transform: unset;
+   width: 86%;
+   margin: 0 auto;
+}
+.character li{
+   width: 100%;
+   padding: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.character li a{
+   width: 100%;
+   position: relative;
+}
+.character li a>p{
+   width: 100%;
+   font-size: 1.143em;
+   text-align: left;
+   line-height: 1em;
+   padding: 10px 0px 10px 10px;
+   box-sizing: border-box;
+}
+.character li a dl{
+   width: 90%;
+   margin: 0 auto;
+   display:unset;
+}
+.character li a dl dt{
+   width: 100%;
+   height: auto;
+   font-size: 6.250vw;
+   line-height: 1em;
+   float: none;
+   padding-bottom: 10px;
+   margin-left: 0px;
+   margin: 0 auto;
+}
+.character li a dl dd:nth-of-type(1){
+   width: 100%;
+   line-height: 1.2em;
+   padding: 0 10px 0 0px;
+   text-align: left;
+   font-size: 10.417vw;
+}
+.character li a dl dd:nth-of-type(2){
+   width: 100%;
+   margin: 0;
+   font-size: 2.917vw;
+   padding-top: 15px;
+   margin-right: 0px;
+   text-align: left;
+   clear: both;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+}
+.trailer{
+   padding: 65px 35px;
+}
+.trailer strong{
+   font-size: 2.500em;
+   padding: 0 30px 0px 0;
+}
+.trailer>p{
+   font-size: 3.750vw;
+   line-height: 1em;
+   padding:10px 0 40px 0;
+   clear: both;
+}
+.trailer .mySwiper2{
+   width: 100%;
+   position:relative;
+   overflow: hidden;
+}
+.trailer .mySwiper2 .swiper-wrapper{
+   width: 100%;
+}
+.trailer .mySwiper2 .swiper-slide{
+   float:left;
+   display:flex;
+   overflow: hidden;
+   flex-direction: column;
+}
+.mySwiper2 .swiper-slide a{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide a img{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl dt{
+   display: none;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(1){
+   font-size: 5.208vw;
+   float: left;
+   width: 60%;
+   padding-top: 20px;
+   text-align: left;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(2){
+   font-size: 4.167vw;
+   float: left;
+   width: 40%;
+   padding-top: 25px;
+   text-align: right;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(3){
+   display: none;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(n+4){
+   display: none;
+}
+#content .mySwiper{
+   padding-top: 20px;
+}
+.mySwiper .swiper-slide{
+   margin-right: 0px;
+}
+.gallery{
+   padding: 65px 35px 90px 35px;
+}
+.gallery strong{
+   font-size: 2.500em;
+   padding:0;
+}
+.gallery>p{
+   font-size: 3.750vw;
+   line-height: 1em;
+   padding: 10px 0 40px 0px;
+   clear: both;
+}
+.gallery_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   grid-gap: 5px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a a d'
+   'a a c'
+   'e f f';
+}
+.gallery_con li:nth-of-type(2){
+   grid-area: b;
+   display: none;
+}
+.gallery_con li:nth-of-type(7){
+   grid-area: g;
+   display: none;
+}
+.gallery li a{
+   
+}
+.gallery li a img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery>span{
+   font-size: 2.143em;
+   bottom: 35px;
+}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:320px) {
+#wrap { min-width:320px;}
+html{font-size: 14px;}
+
+#content{ width:100%; margin:0; height:auto; background:none;}
+.more{position: absolute; right: 20px; top: 58px;}
+
+.about{
+   padding: 50px 20px;
+}
+.about_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(1, 1fr);
+   grid-auto-rows: 170px;
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 0px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a'
+   'b'
+   'g';
+}
+.about_con li{
+   line-height: normal;
+}
+.img1{
+   grid-area: a;
+   background: url(../images/about_a.png) center no-repeat;
+   background-size: contain;
+}
+.img2{
+   grid-area: b;
+}
+.img2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.img3{
+   grid-area: c;
+   display: none;
+}
+.img4{
+   grid-area: d;
+   display: none;
+}
+.img5{
+   grid-area: e;
+   display: none;
+}
+.img6{
+   grid-area: f;
+   display: none;
+}
+.img7{
+   grid-area: g;
+}
+.img7 strong{
+   display: block;
+   font-size: 2.143em;
+   padding-top: 1px;
+}
+.img7>.more{
+   display: block;
+   display: block;
+   padding: 0px;
+   padding: 12px 0 0  25px;
+   box-sizing: border-box;
+}
+.button--brightness>span{
+   display: block;
+   font-size: 0.786em;
+   line-height: 1.5em;
+}
+.button--brightness {
+   width: 60px;
+   height: 20px;
+}
+.img7 p{
+   padding-top: 5px;
+   font-size: 0.929em;
+}
+.img7 p:nth-of-type(1){
+   padding-bottom: 0px;
+}
+.img7 p:nth-of-type(2){
+   display: none;
+}
+.img8{
+   grid-area: h;
+   display: none;
+}
+.img9{
+   grid-area: i;
+   display: none;
+}
+.character{
+   padding: 50px 0;
+   height: auto;
+   overflow: hidden;
+}
+.character .backg{
+   width: 100%;
+   height: 100%;
+   padding: 50px 0;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+}
+.character>strong{
+   font-size: 2.143em;
+   padding:0 0 0 20px;
+}
+.character>p{
+   font-size: 1.000em;
+   line-height: 1em;
+   padding: 5px 0 30px 20px;
+   clear: both;
+}
+.chag span{
+   width: 49%;
+   display: block;
+   z-index: 0;
+   position: absolute;
+   
+}
+.chag span:nth-of-type(1){
+   bottom: 0;
+   left: 56%;
+}
+.chag span:nth-of-type(2){
+   bottom: 0;
+   left: 59%;
+}
+.chag span:nth-of-type(3){
+   bottom: 0;
+   left: 30%;
+}
+.chag span:nth-of-type(4){
+   bottom: 0;
+   left: 59%;
+}
+.chag span:nth-of-type(5){
+   bottom: 0;
+   left: 56%;
+}
+.chag span img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.character_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   grid-auto-rows: 150px;
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 0px;
+   box-sizing: border-box;
+   /* 갭은 픽셀로 주는게 좋다고 함 */
+
+   grid-template-areas: 
+   'a b c'
+   'd e f';
+}
+.character ul{
+   position: sticky;
+   top: unset;
+   left: unset;
+   transform: unset;
+   width: 93%;
+   margin: 0 auto;
+}
+.character li{
+   width: 100%;
+   padding: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.character li a{
+   width: 100%;
+   position: relative;
+}
+.character li a>p{
+   width: 95%;
+   font-size: 1.000em;
+   text-align: left;
+   line-height: 1em;
+   padding: 5px 0px 10px 5px;
+   box-sizing: border-box;
+}
+.character li a dl{
+   width: 90%;
+   margin: 0 auto;
+   display:unset;
+}
+.character li a dl dt{
+   width: 96%;
+   height: auto;
+   font-size: 6.563vw;
+   line-height: 1em;
+   float: none;
+   padding-bottom: 10px;
+   margin-left: 0px;
+   margin: 0 auto;
+}
+.character li a dl dd:nth-of-type(1){
+   width: 100%;
+   line-height: 1.2em;
+   padding: 0 10px 0 0px;
+   text-align: left;
+   font-size: 12.500vw;
+}
+.character li a dl dd:nth-of-type(2){
+   width: 97%;
+   margin: 0 auto;
+   font-size: 3.438vw;
+   padding-top: 10px;
+   margin-right: 0px;
+   text-align: left;
+   clear: both;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+}
+.trailer{
+   padding: 50px 20px;
+}
+.trailer strong{
+   font-size: 2.143em;
+   padding: 0 0px 0px 0;
+}
+.trailer>p{
+   font-size: 1.000em;
+   line-height: 1em;
+   padding:10px 0 30px 0;
+   clear: both;
+}
+.trailer .mySwiper2{
+   width: 100%;
+   position:relative;
+   overflow: hidden;
+}
+.trailer .mySwiper2 .swiper-wrapper{
+   width: 100%;
+}
+.trailer .mySwiper2 .swiper-slide{
+   float:left;
+   display:flex;
+   overflow: hidden;
+   flex-direction: column;
+}
+.mySwiper2 .swiper-slide a{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide a img{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl{
+   width: 100%;
+}
+.mySwiper2 .swiper-slide dl dt{
+   display: none;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(1){
+   font-size: 6.250vw;
+   clear: both;
+   width: 60%;
+   padding-top: 10px;
+   text-align: left;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(2){
+   font-size: 4.375vw;
+   width: 40%;
+   padding-top: 15px;
+   text-align: right;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(3){
+   display: none;
+}
+.mySwiper2 .swiper-slide dl dd:nth-of-type(n+4){
+   display: none;
+}
+#content .mySwiper{
+   padding-top: 20px;
+}
+.mySwiper .swiper-slide{
+   margin-right: 0px;
+}
+.gallery{
+   padding: 50px 20px 50px 20px;
+}
+.gallery strong{
+   font-size: 2.143em;
+   padding:0 0px 0 0;
+}
+.gallery>p{
+   font-size: 1.000em;
+   line-height: 1em;
+   padding: 10px 0 20px 0px;
+   clear: both;
+}
+.gallery_con{
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   /* grid-auto-rows: 170px; */
+   /* 이 값을 주면 높이가 고정이라 사진이 잘리고 안주면 평범한 유동 */
+   grid-gap: 5px;
+   box-sizing: border-box;
+
+   grid-template-areas: 
+   'a a d'
+   'a a c'
+   'e f f';
+}
+.gallery_con li:nth-of-type(2){
+   grid-area: b;
+   display: none;
+}
+.gallery_con li:nth-of-type(7){
+   grid-area: g;
+   display: none;
+}
+.gallery li a{
+   
+}
+.gallery li a img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery>span{
+   font-size: 1.429em;
+   bottom: 22px;
+}
+
+}
