@@ -1,0 +1,47 @@
+/* 회사소개 본문 css */
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+.qnas {width:100%;}
+/* #content .qnas .contlist{display: none;} */
+.qnas .qna_menu{width: 1200px; margin: 0 auto; list-style: none; margin-top: 100px; overflow: hidden; display: flex; justify-content: space-between;}
+.qnas .qna_menu li{width: 18%; height: 150px; float: left; margin-bottom: 100px; overflow: hidden; position: relative; border-radius: 10px;}
+.qnas .qna_menu .qna{width: 216px; height: 150px; display: block; background-size: 80px;}
+.qnas .qna_menu a:hover{}
+.qnas .qna_menu .qna p{width: 216px; font-size: 1.111em; text-align: center; position: absolute; bottom: 15px; font-weight: 500;}
+.qnas .qna_menu .qna img{width: 80px; height: 80px; object-fit: contain; margin: 20px 0 0 70px;}
+
+.content_area{width: 1200px; margin: 0 auto; overflow: hidden; padding-bottom: 150px;}
+#content .content_area h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin:100px 0 0 0; color: #ed8b00; text-align: center;}
+#content .content_area>a:nth-of-type(1){ width: 130px; height: 30px; position: absolute; right: 400px; top: 114px; text-align: center;}
+
+
+.faq .hgroup{position:relative; margin:50px 0 100px 0;}
+.faq .hgroup p:nth-of-type(1){font-size: 1.333em; font-weight: 500; text-align: center; display: flex; align-items: center; justify-content: space-evenly;}
+.faq .hgroup p:nth-of-type(2){ width: 600px; height: 150px; display: inline-block;font-size: 1.333em;  font-weight: 500;  text-align: center;  box-sizing: border-box; padding:30px; display: flex; align-items: center; justify-content: space-evenly;} 
+.faq .hgroup p:nth-of-type(3){clear: both; font-size: 1.333em; width: 1200px; text-align: center;font-weight: 500;}
+.faq .hgroup .all{position:absolute; top:5px; right:10px; color:#fff; text-decoration:none; width: 130px; height: 30px; text-align: center; background: #ed8b00; box-sizing: content-box; padding: 7px 0 3px 0; border-radius: 5px; font-size: 1em}
+.faq .hgroup .all i{font-size: 1.333em} 
+.faq ul{margin:0;padding:0;list-style:none}  
+.faq .q{margin:0;border-top:1px solid #ddd; position: relative; font-size:1.111em}  
+.faq .q a.trigger{display:block; padding:10px 15px; background:#fafafa;color:#333;text-align:left; text-decoration:none; font-size:1em;}  
+.faq .hide .q a.trigger{font-weight:normal; background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#feeddd;color:#000;}
+.faq .q span{display: block; position: absolute; right: 15px; top:10px} 
+.faq .a{margin:0; padding:50px;line-height:1.5em; height: 100%; display: none; color: #666;}
+.faq .a a{display: inline; color: #ed8b00; font-weight: 500;}
+.faq .article p:nth-of-type(3){padding: 0 50px 50px 50px;}
+
+
+.faq .enterprise .q a.trigger::before{content: '기업'; width: 50px; height: 35px; display: block; float: left; z-index: 10; margin-right: 25px; font-weight: 500; color: #ed8b00;}
+.faq .ware .q a.trigger::before{content: '제품'; width: 50px; height: 35px; display: block; float: left; z-index: 10; margin-right: 25px; font-weight: 500; color: #ed8b00;}
+.faq .restaurant .q a.trigger::before{content: '마을'; width: 50px; height: 35px; display: block; float: left; z-index: 10; margin-right: 25px; font-weight: 500; color: #ed8b00;}
+.faq .etc .q a.trigger::before{content: '기타'; width: 50px; height: 35px; display: block; float: left; z-index: 10; margin-right: 25px; font-weight: 500; color: #ed8b00;}
+
+
+#content .content_area>a:nth-of-type(1){ width: 130px; height: 30px; position: absolute; right: 400px; top: 114px; text-align: center;}
+
+
+

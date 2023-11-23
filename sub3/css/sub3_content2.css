@@ -1,0 +1,213 @@
+/* 회사소개 본문 css */
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px;}
+
+
+.baekseju{height: 950px; padding: 100px 0 150px 0; box-sizing: border-box; position: relative; overflow: hidden;}
+
+.more {
+    background: #f5f5f5;
+    width: 130px;
+    height: 40px;
+    line-height: 2em;
+    padding: 0;
+    border: none;
+    color: #666;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .more span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .more:before,
+  .more:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more:before {
+    height: 0%;
+    width: 2px;
+  }
+  .more:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .more:hover:before {
+    height: 100%;
+  }
+  .more:hover:after {
+    width: 100%;
+  }
+  .more span:hover{
+     color: #ed8b00;
+  }
+  .more span:before,
+  .more span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .more span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more span:hover:before {
+    height: 100%;
+  }
+  .more span:hover:after {
+    width: 100%;
+  }
+
+#content .swiper-container{width: 79%; position: absolute; left: 1400px;}
+.swiper-wrapper{}
+#content .swiper-slide{float: left; padding: 28px; box-sizing: border-box;}
+#content .swiper-slide:nth-child(1){margin-left: 50px;}
+.swiper-slide img{width: 300px; height: 600px; object-fit: cover;}
+.swiper-slide dl{width: 300px; text-align: center; padding: 20px 0;}
+.swiper-slide dt{font-size: 1.333em; font-weight: 500;}
+.swiper-slide dd{font-size: 1.111em;}
+
+#content .swiper-button-next{position: absolute; top: 382px; left: 423px;}
+#content .swiper-button-next , #content .swiper-button-prev{color: #ed8b00;}
+/* #content .swiper-button-prev{position: absolute; top: 300px; left: 0px;} */
+.baek-container {float: left; width: 50%; height: 764px; margin-left: 400px;}
+
+.baek-container .modal_box{position: fixed; left: 0; top: 0; z-index: 3; width: 100%; height: 100%; background: #000; opacity: .5; display: none;}
+.close_btn {position: absolute; top: 0; right: 15px; font-size: 2em;}
+
+.progressTag {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 150px;
+  height: 20px;
+  border-radius: 7px;
+  color: #ed8b00;
+  padding: 5px 0;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 8px;
+}
+progress::-webkit-progress-value {
+  background-color: #ed8b00;
+  border-radius: 8px;
+}
+progress::-moz-progress-bar {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.baekseju1{
+  animation: aaa;
+  animation-duration : 1s;
+}
+
+@keyframes aaa{
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.baekseju1{float: left; box-sizing: border-box; display: none; width: 1400px; height: 763px; position: absolute; left: 0; display: none; padding: 0 0 0 400px;}
+.baekseju1::before{content: ''; width: 2000px; height: 280px; position: absolute; top: 484px; left: 0px; z-index: 0;  background:#f7e9c6;}
+/* .baekseju1::before{content: ''; width: 550px; height: 765px; position: absolute; bottom: 100px; left: -350px; z-index: 0; background: url(../common/images/baekseju1.png) bottom left no-repeat; background-size: 650px;} */
+.baekseju1 ul{width: 1000px; overflow: hidden; position: absolute; right: 0; top:48px; animation: aaa; animation-duration : 1s; padding: 50px 0;}
+.baekseju1 h3 img{width: 250px; height: 300px; float: left; object-fit: cover;}
+.baekseju1 ul li:nth-of-type(2){overflow: hidden;}
+.baekseju1 ul li:nth-of-type(2) p{font-size: 1.889em; font-weight: 700; margin-bottom: 34px;}
+.baekseju1 ul li:nth-of-type(2) dl{float: left; padding-right: 50px; box-sizing: border-box; }
+.baekseju1 ul li:nth-of-type(2) dl dt{font-size:1.333em;; font-weight: 500; margin-bottom: 14px; color: #e07e3c;}
+.baekseju1 ul li:nth-of-type(2) dl dt:nth-of-type(2){color: #407ec9;}
+.baekseju1 ul li:nth-of-type(2) dl dd{font-size:1.111em; text-align: justify; font-weight: 400; margin-bottom: 60px;}
+.baekseju1 ul li:nth-of-type(2) dl dd>span{color: #ed8b00; font-weight: 500;}
+.baekseju1 ul li:nth-of-type(3) dl{overflow: hidden; float: left; color: #666; text-align: justify; padding: 10px; margin-left: 250px; width: 671px; position: relative; border: 1px solid #fff; border-radius: 5px;}
+.baekseju1 ul li:nth-of-type(3) dt{float: left; clear: left; font-size: 1em; width: 80px; padding: 3px; font-weight: 500;}
+.baekseju1 ul li:nth-of-type(3) dd{float: left; font-size: 1em; width: 570px; padding: 3px;}
+
+
+
+.baekseju2{float: left; box-sizing: border-box; display: block; width: 1400px; height: 763px; position: absolute; left: 0; display: none; padding: 0 0 0 400px;}
+/* .baekseju2::after{content: ''; width: 2000px; height: 100%; position: absolute; bottom: 0px; left: -400px; z-index: -1; background: #5eac78;} */
+.baekseju2::before{content: ''; width: 2000px; height: 280px; position: absolute; top: 484px; left: 0px; z-index: 0;  background:#5eac78;}
+.baekseju2 ul{width: 1000px; overflow: hidden; position: absolute; right: 0; top:48px; animation: aaa; animation-duration : 1s; padding: 50px 0;}
+.baekseju2 h3 img{width: 250px; height: 300px; float: left; object-fit: contain;}
+.baekseju2 ul li:nth-of-type(2){overflow: hidden;}
+.baekseju2 ul li:nth-of-type(2) p{font-size: 1.889em; font-weight: 700; margin-bottom: 34px;}
+.baekseju2 ul li:nth-of-type(2) dl{float: left; padding-right: 50px; box-sizing: border-box; }
+.baekseju2 ul li:nth-of-type(2) dl dt{font-size:1.333em; font-weight: 500; margin-bottom: 14px; color: #f47929;}
+.baekseju2 ul li:nth-of-type(2) dl dt:nth-of-type(2){color: #5eac78;}
+.baekseju2 ul li:nth-of-type(2) dl dd{font-size:1.111em; text-align: justify; font-weight: 400; margin-bottom: 30px;}
+.baekseju2 ul li:nth-of-type(2) dl dd>span{color: #ed8b00; font-weight: 500;}
+.baekseju2 ul li:nth-of-type(3) dl{overflow: hidden; float: left; color: #f5f5f5; text-align: justify; padding: 10px; margin-left: 250px; border: 1px solid #fff; border-radius: 5px; position: relative; width: 671px;}
+.baekseju2 ul li:nth-of-type(3) dt{float: left; clear: left; font-size: 1em; width: 80px; padding: 3px; font-weight: 500;}
+.baekseju2 ul li:nth-of-type(3) dd{float: left; font-size: 1em; width: 570px; padding: 3px;}
+
+
+
+.baekseju3{float: left; box-sizing: border-box; display: block; width: 1400px; height: 763px; position: absolute; left: 0; display: none; padding: 0 0 0 400px;}
+.baekseju3::after{content: ''; width: 2000px; height: 765px; position: absolute; bottom: 0px; left: 0px; z-index: -1; background: url(../common/images/baekseju4.jpg)}
+.baekseju3::before{content: ''; width: 2000px; height: 100%; position: absolute; top: 150px; left: -270px; z-index: 0;  background: url(../common/images/baekseju44.png) top left no-repeat;}
+.baekseju3 ul{width: 1000px; overflow: hidden; position: absolute; right: 0; top:121px; animation: aaa; animation-duration : 1s; padding: 50px 0;}
+.baekseju3 h3 img{width: 250px; height: 300px; float: left; object-fit: cover;}
+.baekseju3 ul li:nth-of-type(2){overflow: hidden;}
+.baekseju3 ul li:nth-of-type(2) dl{float: left; padding-right: 50px; box-sizing: border-box; }
+.baekseju3 ul li:nth-of-type(2) dl dt{font-size: 1.889em; font-weight: 700; margin-bottom: 34px;}
+.baekseju3 ul li:nth-of-type(2) dl dd{font-size:1.333em; font-weight: 500; margin-bottom: 14px;}
+.baekseju3 ul li:nth-of-type(2) dl dd:nth-of-type(2){font-size:1.111em; text-align: justify; font-weight: 400; margin-bottom: 34px;}
+.baekseju3 ul li:nth-of-type(2) dl dd>span{color: #ed8b00; font-weight: 500;}
+.baekseju3 ul li:nth-of-type(2) dl dd:nth-of-type(2)>span{color: #ed8b00; font-weight: 400;}
+.baekseju3 ul li:nth-of-type(3) dl{overflow: hidden; float: left; color: #666; text-align: justify; padding: 10px; margin-left: 250px; border: 1px solid #666; border-radius: 5px; position: relative; width: 671px;}
+.baekseju3 ul li:nth-of-type(3) dt{float: left; clear: left; font-size: 1em; width: 80px; padding: 3px; font-weight: 500;}
+.baekseju3 ul li:nth-of-type(3) dd{float: left; font-size: 1em; width: 570px; padding: 3px;}
+
+
+
+.baekseju4{float: left; box-sizing: border-box; display: block; width: 1400px; height: 763px; position: absolute; left: 0; display: none; padding: 0 0 0 400px;}
+.baekseju4::after{content: ''; width: 2000px; height: 100%; position: absolute; bottom: 0px; left: -200px; z-index: -2; background: url(../common/images/baekseju5.jpg)top left no-repeat; background-size: 1300px;}
+.baekseju4::before{content: ''; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; z-index: 5;  background: url(../common/images/baekseju55.png) no-repeat; background-size: 550px;}
+.baekseju4 ul{width: 1000px; overflow: hidden; position: absolute; right: 0; top:58px; animation: aaa; animation-duration : 1s; padding: 50px 0;}
+.baekseju4 h3 img{width: 250px; height: 300px; float: left; object-fit: cover;}
+.baekseju4 ul li:nth-of-type(2){overflow: hidden;}
+.baekseju4 ul li:nth-of-type(2) dl{float: left; padding-right: 50px; box-sizing: border-box; }
+.baekseju4 ul li:nth-of-type(2) dl dt{font-size: 1.889em; font-weight: 700; margin-bottom: 34px;}
+.baekseju4 ul li:nth-of-type(2) dl dd{font-size:1.333em; font-weight: 500; margin-bottom: 14px;}
+.baekseju4 ul li:nth-of-type(2) dl dd:nth-of-type(2){font-size:1.111em; text-align: justify; font-weight: 400; margin-bottom: 34px;}
+.baekseju4 ul li:nth-of-type(2) dl dd>span{color: #ed8b00; font-weight: 500;}
+.baekseju4 ul li:nth-of-type(2) dl dd:nth-of-type(2)>span{color: #ed8b00; font-weight: 500;}
+.baekseju4 ul li:nth-of-type(2) dl:nth-of-type(2){}
+.baekseju4 ul li:nth-of-type(2) dl:nth-of-type(2) dt{font-size: 1.111em; margin-bottom: 14px; font-weight: 500;}
+.baekseju4 ul li:nth-of-type(2) dl:nth-of-type(2) dd{font-size: 1em; font-weight: 400;}
+.baekseju4 ul li:nth-of-type(3) dl{overflow: hidden; float: left; text-align: justify; padding: 10px; margin-left: 250px; border: 1px solid #666; border-radius: 5px; color: #666; position: relative; width: 671px;}
+.baekseju4 ul li:nth-of-type(3) dt{float: left; clear: left; font-size: 1em; width: 80px; padding: 3px; font-weight: 500;}
+.baekseju4 ul li:nth-of-type(3) dd{float: left; font-size: 1em; width: 570px; padding: 3px;}

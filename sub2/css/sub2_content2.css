@@ -1,0 +1,128 @@
+/* 회사소개 본문 css */
+
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+
+.content_area .tab ul{width: 1200px; margin: 0 auto; list-style: none; margin-top: 100px;}
+.content_area .tab li{width: 33.33%; float: left; margin-bottom: 50px;}
+.content_area .tab a{color: #fff; text-decoration: none; display: block; padding: 15px 0; text-align: center; font-size: 1.389em; background: #ed8b00; border: 1px solid #fff; border-radius: 5px;}
+.content_area .tab a:hover{}
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+.introduction{overflow: hidden; padding: 100px 0 100px 0;}
+.introduction img:nth-child(1){width: 1200px; height: 300px; display: block; z-index: -1; position: relative;}
+.introduction div{width: 1000px; height: 400px; background: #fff; margin: -100px 0 50px 100px; overflow: hidden;}
+.introduction div h3{width: 270px; height: 100px; margin: 50px 0 50px 370px; overflow: hidden;}
+.introduction img:nth-child(2){width: 270px; height: 100px;}
+.introduction div>p{font-size: 1.333em; margin: 0 0 40px 0px; text-align: center; height: 70px; padding: 0;}
+.introduction p{width: 1000px; height: 80px; font-size: 1.111em; margin: 0 0 0 100px; float: left; box-sizing: border-box; padding: 0 20px; text-align: justify;}
+
+.more {
+    background: #ed8b00;
+    width: 220px;
+    height: 50px;
+    line-height: 2.5em;
+    padding: 0;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.111em;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 610px;
+  }
+  .more span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .more:before,
+  .more:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more:before {
+    height: 0%;
+    width: 2px;
+  }
+  .more:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .more:hover:before {
+    height: 100%;
+  }
+  .more:hover:after {
+    width: 100%;
+  }
+  .more span:hover{
+     color: #ed8b00;
+  }
+  .more span:before,
+  .more span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .more span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more span:hover:before {
+    height: 100%;
+  }
+  .more span:hover:after {
+    width: 100%;
+  }
+
+
+
+.education {padding: 100px 0 150px 0; overflow: hidden; }
+.education h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; text-align: center;}
+.education p{font-size: 1.111em; font-weight: 500; padding-bottom: 20px; margin-bottom:100px; padding: 0px; text-align: center; }
+.education ul{}
+.education ul::before{content: ''; display: block;  width: 1200px; height: 400px; position: absolute; z-index: -1; margin-top: 0px; background: url(../common/images/still-life-wine-carafe-table.jpg) center no-repeat; background-size: 1500px; background-attachment: fixed; border-radius: 20px;}
+.education li{width: 220px; height: 220px; float: left; margin:80px 50px 0 0;  background: rgba(255, 255, 255, .8); border-radius: 50%; outline: 1px solid #fff; outline-offset: 5px;}
+.education li:nth-child(1){margin-left: 90px;}
+.education dl{text-align: center; width: 220px; height: 220px; box-sizing: border-box; position: relative; padding: 30px;}
+.education dt{font-size: 1.667em; font-weight: 700; color: #ed8b00; margin-bottom: 10px;}
+.education dd{font-size: 1em; text-align: center; font-weight: 500;}
+
+.content_area .today{width: 2000px; margin: 0 auto; padding: 100px 0 200px 0; position: relative; }
+.content_area .today::after{content: ''; width: 2000px; height: 700px; background: url(../common/images/information.jpg); position: absolute; top: 300px; z-index: -1;}
+.today h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; text-align: center;}
+.today p{font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+
+.today #return_box{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #000; opacity: .7; display: none; z-index: 1;}
+
+.information{position: relative;}
+.information .information_menu{display: flex; justify-content: space-evenly;}
+.information .information_menu li{float: left; text-align: center; width: 300px; height: 80px; font-size: 1.889em; box-sizing: border-box; padding-top: 13px; font-weight: 700; color: #fff; text-shadow: 0 0 5px #333; margin-top: 10px;}
+
+
+.information .zoneset{width: 2000px; margin: 0 auto; display: flex; justify-content: space-evenly;}
+.information .zone{width: 300px; height: 500px; overflow: hidden; overflow: scroll; -ms-overflow-style: none; z-index: 10; background: rgba(255, 255, 255, .6); margin-top: 30px; border-radius: 10px;}
+.information .zone::-webkit-scrollbar{display:none;}
+.information .zone .article{}
+.information .zone .trigger{height: 50px; text-align: center; box-sizing: border-box; font-size: 1.111em; padding-top: 8px; transition: all .3s; font-weight: 500;}
+.information .zone .trigger:hover{background: #ed8b00; color: #fff;}
+.information .zone img{width: 250px; height: 250px; margin: 0px 350px 50px 350px; border: 1px solid red;}
+.information .zone .a{height: 100%; box-sizing: border-box; padding: 30px; text-align: justify; display: none;}

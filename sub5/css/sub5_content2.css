@@ -1,0 +1,53 @@
+/* 회사소개 본문 css */
+
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+.procedure{height: 800px; position: relative;}
+#content .procedure h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin:100px 0 20px 0; text-align: center;}
+.procedure div{width: 2000px; height: 300px; margin-top: 170px; position: relative;}
+.procedure div::before{content: ''; display: block; position: absolute; width: 2000px; height: 300px; top: 150px; z-index: -3; border-top: 1px solid #ccc;}
+.procedure li:nth-of-type(1){margin-left: 235px;}
+.procedure li{width: 170px; height: 170px; border-radius: 50%; float: left; margin-top: 60px; margin-left: 99px; box-shadow: 0px 0px 50px 2px #ccc; overflow: hidden; outline-offset: 25px; outline: 2px dashed #ccc; background: #fff;}
+svg{width: 1280px; height: 300px; fill: none; stroke: #ed8b00; stroke-width: 20px; stroke-linecap: round; position: absolute; left: 250px; stroke-dasharray: 700; stroke-dashoffset: 0; animation: ani 3s linear infinite; animation-iteration-count: 1; }
+#svg6{transform: rotate(-90deg); margin-left: 800px; margin-top: -25px;}
+.procedure dl{width: 165px; height: 165px; text-align: center; display: flex; justify-content: center; align-items: center; margin-top: 10px;}
+.procedure dt{font-size: 1.389em; position: absolute; top: 75px; margin-left: 5px; color: #ed8b00; font-weight: 700;}
+.procedure dd{font-size: 1.389em; font-weight: 500; color: #666;}
+
+@keyframes ani  {
+    0% {
+      stroke-dashoffset: 700;
+      stroke-width: 10px;
+    }
+    50% {
+      stroke-dashoffset: 350;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      stroke-width: 20px;
+    }
+  }
+
+
+
+.announcement{background: url(../common/images/sub_5_2_1.jpg); padding-bottom: 100px;}
+#content .announcement h3{font-size: 2.444em; font-weight: 700; margin:150px 0 100px 0; text-align: center;}
+.announcement ul{width: 1200px; margin: 0 auto; margin-bottom: 100px;}
+.announcement li:nth-of-type(1){width: 1200px; height: 300px; background: url(../common/images/sub_5_2_2.jpg); overflow: hidden; box-shadow: 2px 2px 10px 1px #666;}
+.announcement li:nth-of-type(1) dl{text-align: center;}
+.announcement li:nth-of-type(1) dt{font-size: 1.889em; font-weight: 700; margin: 70px 0 10px 0;}
+.announcement li:nth-of-type(1) dd:nth-of-type(1){font-size: 1.333em; font-weight: 500; margin-bottom: 20px;}
+.announcement li:nth-of-type(1) dd:nth-of-type(2){font-size: 1em; font-weight: 500; color: #666;}
+.announcement li:nth-of-type(2){overflow: hidden; height: 850px;}
+.announcement dl, dt, dd {padding:0; margin:0;}
+.announcement li:nth-of-type(2) dl{width:700px; padding: 50px 50px 50px 50px; overflow: hidden; margin: -100px 0 10px 200px;}
+.announcement li:nth-of-type(2) dl:nth-of-type(1){margin-top: 50px;}
+.announcement li:nth-of-type(2) dt{clear:left; float:left; display:block; margin:0 0 20px; width:150px; font-size: 1.111em; font-weight: 700; color: #666;}
+.announcement li:nth-of-type(2) dd{padding:0 0 0 200px; margin:0px 0 1px; line-height: 1.6em; font-weight: 500;}
+.announcement li:nth-of-type(3){padding-top: 100px;}
+.announcement li:nth-of-type(3) dl{width:700px; padding: 50px 50px 50px 50px; overflow: hidden; margin: -100px 0 5px 200px; color: #666;}
+.announcement li:nth-of-type(3) dl:nth-of-type(1){border-top: 2px solid #ccc;}
+.announcement li:nth-of-type(3) dt{clear:left; float:left; display:block; margin:0 0 20px; width:150px; font-size: 1em; font-weight: 500; color: #666;}
+.announcement li:nth-of-type(3) dd{padding:0 0 0 200px; margin:0px 0 1px; line-height: 1.6em;}
+.announcement a{width: 200px; height: 30px; position: absolute; left: 890px; top: 1820px; text-align: center; padding: 10px 10px; font-size: 1.111em; background: #ed8b00; color: #fff; font-weight: 500;}

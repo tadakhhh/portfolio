@@ -1,0 +1,279 @@
+/* 회사소개 본문 css */
+
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+
+.content_area .tab ul{width: 1200px; margin: 0 auto; list-style: none; margin-top: 100px;}
+.content_area .tab li{width: 33.33%; float: left; margin-bottom: 50px;}
+.content_area .tab a{color: #fff; text-decoration: none; display: block; padding: 15px 0; text-align: center; font-size: 1.389em; background: #ed8b00; border: 1px solid #fff; border-radius: 5px;}
+.content_area .tab a:hover{}
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+.introduction{overflow: hidden; padding: 100px 0 150px 0;}
+.introduction img:nth-child(1){width: 1200px; height: 300px; display: block; z-index: -1; position: relative;}
+.introduction div{width: 1000px; height: 400px; background: #fff; margin: -100px 0 50px 100px; overflow: hidden;}
+.introduction div h3{margin: 50px 0 50px 390px; overflow: hidden; width: 240px; height: 100px;}
+.introduction img:nth-child(2){width: 240px; height: 100px;}
+.introduction div>p{font-size: 1.333em; margin: 0 0 40px 100px; text-align: center; height: 70px; padding: 0;}
+.introduction p{width: 800px; height: 150px; font-size: 1.111em; margin: 0 0 0 100px; float: left; box-sizing: border-box; padding: 20px; text-align: justify;}
+.introduction img:nth-child(3){border: 1px solid orange; width: 200px; height: 150px;}
+
+
+.more {
+  background: #ed8b00;
+  width: 220px;
+  height: 50px;
+  line-height: 2.5em;
+  padding: 0;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.111em;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 610px;
+}
+.more span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.more:before,
+.more:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: #ed8b00;
+  transition: all 0.3s ease;
+}
+.more:before {
+  height: 0%;
+  width: 2px;
+}
+.more:after {
+  width: 0%;
+  height: 2px;
+}
+.more:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.more:hover:before {
+  height: 100%;
+}
+.more:hover:after {
+  width: 100%;
+}
+.more span:hover{
+   color: #ed8b00;
+}
+.more span:before,
+.more span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #ed8b00;
+  transition: all 0.3s ease;
+}
+.more span:before {
+  width: 2px;
+  height: 0%;
+}
+.more span:after {
+  width: 0%;
+  height: 2px;
+}
+.more span:hover:before {
+  height: 100%;
+}
+.more span:hover:after {
+  width: 100%;
+}
+
+
+.excursions {padding: 100px 0 150px 0; overflow: hidden;}
+.excursions h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; text-align: center;}
+.excursions p{font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+.excursions ul{}
+.excursions li{width: 240px; height: 500px; float: left;}
+.excursions dl{text-align: center;}
+.excursions dt{font-size: 1.111em; margin:20px 0 20px 0; font-weight: 500;}
+.excursions dd:nth-child(2){width: 200px; height: 200px; padding: 0; margin-left: 20px;}
+.excursions dd{font-size: 1em; padding: 20px; text-align: justify;}
+
+.process{width: 2000px; position: relative; left: 50%; top: 0; transform: translate(-50%); padding: 100px 0 150px 0; overflow: hidden; height: 850px;}
+.process::before{content: ''; width: 2000px; height: 700px; position: absolute; top: 280px; background: #f5f5f5; z-index: -1;}
+.process h3{font-size: 2.778em; text-align: center;}
+.process p{font-size: 1.333em; text-align: center; margin: 34px 0 100px 0;}
+.process .alist{width: 2000px; height: 650px; position: absolute; top: 300px;}
+.process .alist p:nth-of-type(1){position: absolute; display: block; font-size: 1.889em; width: 250px; text-align: center; top: 100px; font-weight: 700; left: 875px; display: inline-block;}
+.process .alist a{width: 120px; height: 120px; background: red; position: absolute; top: 265px; display: block;}
+
+.ricevtn {
+  background: #ed8b00;
+  width: 180px;
+  height: 50px;
+  line-height: 2.5em;
+  padding: 0;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.111em;
+  font-weight: 500;
+  position: absolute; top: 120px; right: 0px;
+}
+.ricevtn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ricevtn:before,
+.ricevtn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: #ed8b00;
+  transition: all 0.3s ease;
+}
+.ricevtn:before {
+  height: 0%;
+  width: 2px;
+}
+.ricevtn:after {
+  width: 0%;
+  height: 2px;
+}
+.ricevtn:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.ricevtn:hover:before {
+  height: 100%;
+}
+.ricevtn:hover:after {
+  width: 100%;
+}
+.ricevtn span:hover{
+   color: #ed8b00;
+}
+.ricevtn span:before,
+.ricevtn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #ed8b00;
+  transition: all 0.3s ease;
+}
+.ricevtn span:before {
+  width: 2px;
+  height: 0%;
+}
+.ricevtn span:after {
+  width: 0%;
+  height: 2px;
+}
+.ricevtn span:hover:before {
+  height: 100%;
+}
+.ricevtn span:hover:after {
+  width: 100%;
+}
+
+
+.process .alist p:nth-of-type(2){width: 350px; font-size: 1em; display: inline-block; position: absolute; top: 330px; left: 50%; transform: translate(-50%); font-weight: 500; padding: 20px; text-align: justify;}
+.process .alist img{width: 600px; height: 600px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 1;}
+/* .process div .pcnt{width: 50px; height: 50px; position: absolute; top: 440px; left: 745px; font-size: 1.889em; text-align: center; font-weight: 500; color: #666} */
+.process .processbtnr{font-size: 2.778em; position: absolute; bottom: 480px; right: 600px; display: block; color: #ed8b00;}
+.process .processbtnl{font-size: 2.778em; position: absolute; bottom: 480px; left: 600px; display: block; color: #ed8b00;}
+
+
+
+.process .alist dl{ width: 600px; height: 600px; position: absolute; left: 35%; top: 25px; box-sizing: border-box; padding: 80px; text-align: center;  overflow: hidden; border-radius: 50%; border: 10px solid #ed8b00;}
+
+.process .alist dt{font-size: 1.889em; font-weight: 700; margin-bottom: 30px; color: #ed8b00; text-shadow: 2px 2px 5px #333;}
+.process .alist dd span{font-size: 1.111em; line-height: 1.5em; font-weight: 500; color: #fff;}
+.process .alist dd{font-size: 1.111em; text-align: justify; color: #fff;}
+.process .alist dd>img{width: 600px; height: 600px; z-index: -1; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); filter: brightness(50%);}
+
+
+.process .alist>div:nth-of-type(1){width: 300px; height: 300px; position: absolute; left: 200px; top: 170px; overflow: hidden; outline: 2px solid #ed8b00; outline-offset: 5px;border-radius: 50%;}
+.process .alist>div:nth-of-type(1) span{color: #fff; text-align: center;  font-size: 1.111em; position: absolute; top: 210px; left: 50%; transform: translate(-50%); font-weight: 700; z-index: 3;}
+.process .alist>div:nth-of-type(1) img:nth-child(2){width: 100px; height: 100px; position: absolute; top: 130px; object-fit: contain;  z-index: 3;}
+.process .alist>div:nth-of-type(1) img:nth-child(3){width: 300px; height: 300px; position: absolute; object-fit: contain;}
+
+.process .alist>div:nth-of-type(2){width: 300px; height: 300px; position: absolute; left: 1500px; top: 170px; overflow: hidden; outline: 2px solid #ed8b00; outline-offset: 5px;border-radius: 50%;}
+.process .alist>div:nth-of-type(2) span{color: #fff; text-align: center;  font-size: 1.111em; position: absolute; top: 210px; left: 50%; transform: translate(-50%); font-weight: 700; z-index: 3;}
+.process .alist>div:nth-of-type(2) img:nth-child(2){width: 100px; height: 100px; position: absolute; z-index: 3; top: 130px; object-fit: contain;}
+.process .alist>div:nth-of-type(2) img:nth-child(3){width: 300px; height: 300px; position: absolute; object-fit: contain;}
+
+
+.process .alist1 dl{padding-top: 110px;}
+.process .alist1 dd{margin: 5px 0;}
+.process .alist1 dd:nth-of-type(2){text-align: center; padding: 30px 0 20px 0;}
+.process .alist1 dd:nth-of-type(n+3){text-align: center; color: #ed8b00; font-size: 1em;}
+
+/* .process .alist1>img{width: 150px; height: 150px; border: 1px solid red; border-radius: 50%; position: absolute;}
+.process .alist1>img:nth-of-type(1){left: 500px; top:150px;}
+.process .alist1>img:nth-of-type(2){left: 500px;}
+.process .alist1>img:nth-of-type(3){left: 500px; top:500px;} */
+
+
+.process .alist2 dl{padding-top: 80px;}
+.process .alist2 dd{margin: 5px 0;}
+.process .alist2 dd:nth-of-type(2){padding: 30px 0 0px 0;}
+.process .alist2 dd:nth-of-type(4){padding: 20px 0 0px 0;}
+.process .alist2 dd:nth-of-type(n+2){text-align: center;}
+.process .alist2 dd:nth-of-type(6){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em;}
+.process .alist2>img:nth-of-type(1){width: 300px; height: 300px; border: 1px solid red; position: absolute; left: 400px; border-radius: 50%;}
+.process .alist2>img:nth-of-type(2){width: 300px; height: 300px; border: 1px solid red; position: absolute; left: 1600px; border-radius: 50%;}
+
+.process .alist3 dl{padding-top: 170px;}
+.process .alist3 dd{margin: 5px 0;}
+.process .alist3 dd:nth-of-type(2){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}
+
+.process .alist4 dl{padding-top: 160px;}
+.process .alist4 dd{margin: 5px 0;}
+.process .alist4 dd:nth-of-type(2){padding: 30px 0 0px 0; text-align: center;}
+.process .alist4 dd:nth-of-type(3){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}
+
+.process .alist5 dl{padding-top: 160px;}
+.process .alist5 dd{margin: 5px 0;}
+.process .alist5 dd:nth-of-type(2){padding: 30px 0 0px 0; text-align: center;}
+.process .alist5 dd:nth-of-type(3){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}
+
+.process .alist6 dl{padding-top: 30px;}
+.process .alist6 dd{margin: 5px 0;}
+.process .alist6 dd:nth-of-type(1){text-align: center;}
+.process .alist6 dd:nth-of-type(2){padding: 20px 0 0px 0; text-align: center;}
+.process .alist6 dd:nth-of-type(3){padding: 30px 0 0px 0; text-align: center;}
+.process .alist6 dd:nth-of-type(4){padding: 20px 0 0px 0; text-align: center;}
+.process .alist6 dd:nth-of-type(5){padding: 20px 0 0px 0; text-align: center;}
+.process .alist6 dd:nth-of-type(6){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}
+
+.process .alist7 dl{padding-top: 100px;}
+.process .alist7 dd{margin: 5px 0;}
+.process .alist7 dd:nth-of-type(2){padding: 30px 0 0px 0; text-align: center;}
+.process .alist7 dd:nth-of-type(3){padding: 20px 0 0px 0; text-align: center;}
+.process .alist7 dd:nth-of-type(4){padding: 20px 0 0px 0; text-align: center;}
+.process .alist7 dd:nth-of-type(3)>span{font-size: 1em; font-weight: 500; line-height: none;}
+.process .alist7 dd:nth-of-type(4)>span{font-size: 1em; font-weight: 500; line-height: none;}
+.process .alist7 dd:nth-of-type(5){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}
+
+.process .alist8 dl{padding-top: 170px;}
+.process .alist8 dd{margin: 5px 0;}
+.process .alist8 dd:nth-of-type(2){padding: 30px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}
+
+.process .alist9 dl{padding-top: 110px;}
+.process .alist9 dd{margin: 5px 0;}
+.process .alist9 dd:nth-of-type(1){text-align: center;}
+.process .alist9 dd:nth-of-type(2){padding: 20px 0 0px 0; text-align: center;}
+.process .alist9 dd:nth-of-type(3){padding: 30px 0 0px 0; text-align: center;}
+.process .alist9 dd:nth-of-type(4){padding: 20px 0 0px 0; color: #ed8b00; font-size: 1em; text-align: center;}

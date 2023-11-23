@@ -1,0 +1,219 @@
+/* 회사소개 본문 css */
+
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+
+.content_area .tab ul{width: 1200px; margin: 0 auto; list-style: none; margin-top: 100px;}
+.content_area .tab li{width: 33.33%; float: left; margin-bottom: 50px;}
+.content_area .tab a{color: #fff; text-decoration: none; display: block; padding: 15px 0; text-align: center; font-size: 1.389em; background: #ed8b00; border: 1px solid #fff; border-radius: 5px;}
+.content_area .tab a:hover{}
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+.introduction{overflow: hidden; padding: 100px 0 100px 0;}
+.introduction img:nth-child(1){width: 1200px; height: 300px; display: block; z-index: -1; position: relative;}
+.introduction div{width: 1000px; height: 400px; background: #fff; margin: -100px 0 50px 100px; overflow: hidden;}
+.introduction div h3{width: 270px; height: 100px; margin: 50px 0 50px 370px; overflow: hidden;}
+.introduction img:nth-child(2){width: 270px; height: 100px;}
+.introduction div>p{font-size: 1.333em; margin: 0 0 40px 0px; text-align: center; height: 70px; padding: 0;}
+.introduction p{width: 1000px; font-size: 1.111em; margin: 0 0 0 100px; float: left; box-sizing: border-box; text-align: justify;}
+
+.more {
+    background: #ed8b00;
+    width: 220px;
+    height: 50px;
+    line-height: 2.5em;
+    padding: 0;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.111em;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 610px;
+  }
+  .more span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .more:before,
+  .more:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more:before {
+    height: 0%;
+    width: 2px;
+  }
+  .more:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .more:hover:before {
+    height: 100%;
+  }
+  .more:hover:after {
+    width: 100%;
+  }
+  .more span:hover{
+     color: #ed8b00;
+  }
+  .more span:before,
+  .more span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .more span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more span:hover:before {
+    height: 100%;
+  }
+  .more span:hover:after {
+    width: 100%;
+  }
+  
+
+.brand {padding: 100px 0 100px 0; overflow: hidden; position: relative;}
+.brand h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; text-align: center;}
+.brand p{font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+.brand div{box-sizing: border-box; padding:10px 0 60px 0; overflow: hidden;}
+.brand span{width: 210px; height: 500px; float: left; margin-right:20px; box-shadow: 2px 2px 10px 2px #333;}
+.brand span:nth-child(3)::before{content: ''; position: absolute; display: block; width: 280px; height: 350px; background: url(../common/images/sub_2_3_13.png) no-repeat; top: 450px; left: 300px; opacity: .8;}
+.brand span:nth-child(1){margin-left: 30px; margin-top:50px; background: url(../common/images/sub_2_3_2.jpg);}
+.brand span:nth-child(2){background: url(../common/images/sub_2_3_3.jpg);}
+.brand span:nth-child(3){margin-top:50px;background: url(../common/images/sub_2_3_4.jpg);}
+.brand span:nth-child(4){margin-top:25px;background: url(../common/images/sub_2_3_5.jpg);}
+.brand span:nth-child(5){margin-top:75px;background: url(../common/images/sub_2_3_6.jpg);}
+.brand ul{overflow: hidden; box-sizing: border-box; margin: 50px 0;}
+.brand li dl{text-align: center; box-sizing: border-box; padding: 30px; float: left; width: 399px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+.brand dt{font-size: 1.333em; font-weight: 700; color: #ed8b00; margin-bottom: 20px;}
+.brand dd{font-size: 1em; text-align: justify; font-weight: 400;}
+.brand dd:nth-child(2){font-weight: 700; text-align: center; margin-bottom: 10px;}
+.brand div:nth-of-type(2){overflow: hidden; padding: 0;}
+.brand div p:nth-of-type(1){font-size: 1.333em; margin: 60px 0 20px 400px; width: 800px; font-weight: 700; color: #ed8b00;}
+.brand div p:nth-of-type(2){font-size: 1em; font-weight: 400; float: left; width: 790px; margin-bottom: 50px; color: #666;}
+.brand div img{width: 400px; float: left; margin: 50px 0 0 0;}
+.brand div dl{width: 700px; float: left; margin-left: 50px; background: #f5f5f5; border-radius: 10px; padding: 40px; box-sizing: border-box;}
+.brand div:nth-of-type(2) dt{font-weight: 500; font-size: 1.111em; color: #333; text-align: center;}
+.brand div:nth-of-type(2) dd{font-weight: 500; color: #666;}
+.brand div p:nth-of-type(3){font-size: 1em; font-weight: 400; float: left; width: 790px; box-sizing: border-box; padding: 50px; margin: 0; text-align: justify;}
+
+
+
+.location {padding: 100px 0 150px 0; overflow: hidden;}
+.location h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; text-align: center;}
+.location p{font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center; }
+.location ul{display: flex; justify-content: space-around; flex-wrap: nowrap;}
+.location li{box-shadow: 0 5px 5px -2px #ccc; width: 300px; float: left; overflow: hidden; background: #fff; border: 1px solid #ccc;}
+.location dl{text-align: center; box-sizing: border-box; padding: 20px;}
+.location dt{font-weight: 500; font-size: 1.111em; margin-bottom: 10px;}
+.location dd{font-size: 1em;}
+.location dl dd>a{width: 150px; padding: 8px 0 10px 0; height: 30px; font-size: 1.111em; text-align: center; background: #ed8b00; color: #fff; margin:30px 0 0 55px;}
+
+.location .modal_box{position: fixed; left: 0; top: 0; z-index: 5; width: 100%; height: 100%; background: #000; opacity: .7; display: none;}
+.location .popup .close_btn{position: absolute; top: 25px; right: 25px; display: block; overflow: hidden; width: 40px; height: 40px;}
+.location .popup .close_btn i{font-size: 40px; margin-left: 5px; color: #666;}
+
+.location .popup{}
+.location .popup li{width: 700px; box-sizing: border-box;padding: 30px; position: fixed; top: 55%; left: 50%; transform: translate(-50%,-50%); background: #fff; display: none; z-index: 10; box-shadow: none;}
+.location .popup p:nth-of-type(1){font-size: 1.889em; margin: 20px 0 40px 0; font-weight: 500; color: #ed8b00;}
+.location .popup div{ float: left; width: 630px;}
+.location .popup div img:first-child{width: 400px; height: 300px; float: left;}
+.location .popup div img:nth-child(2){float: left; width: 220px; height: 145px; box-sizing: border-box; margin-left: 10px;}
+.location .popup div img:nth-child(3){float: left; width: 220px; height: 145px; box-sizing: border-box; margin-left: 10px; margin-top: 8px;}
+.location .popup dl{overflow: hidden; box-sizing: border-box; padding: 20px 20px; text-align: justify; float: left; line-height: 1.5em; margin: 30px 0 0 0; border-top: 2px solid #ccc; background: url(../common/images/20140317000059-removebg-preview.png)no-repeat; background-size: 200px; background-position: 100% 100%; }
+.location .popup dt{float: left; clear: left; font-size: 1em; width: 100px; margin: 0; font-weight: 500; color: #666;}
+.location .popup dd{float: left; font-size: 1em; width: 490px; font-weight: 400; text-align: justify;}
+
+.location dl dd>a {
+    background: #ed8b00;
+    width: 160px;
+    height: 50px;
+    line-height: 2.5em;
+    padding: 0;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.111em;
+    font-weight: 500;
+    position: relative;
+  }
+  .location dl dd>a span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .location dl dd>a:before,
+  .location dl dd>a:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .location dl dd>a:before {
+    height: 0%;
+    width: 2px;
+  }
+  .location dl dd>a:after {
+    width: 0%;
+    height: 2px;
+  }
+  .location dl dd>a:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .location dl dd>a:hover:before {
+    height: 100%;
+  }
+  .location dl dd>a:hover:after {
+    width: 100%;
+  }
+  .location dl dd>a span:hover{
+     color: #ed8b00;
+  }
+  .location dl dd>a span:before,
+  .location dl dd>a span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .location dl dd>a span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .location dl dd>a span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .location dl dd>a span:hover:before {
+    height: 100%;
+  }
+  .location dl dd>a span:hover:after {
+    width: 100%;
+  }

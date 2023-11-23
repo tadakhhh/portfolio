@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원-오시는길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content4.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/cfe3cae143.js" crossorigin="anonymous"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ce3a2c1f54e083492024f29c5a65fb1"></script>
+    
+</head>
+<body>
+    <? include "../common/subhead.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/sub6.jpg" alt="">
+            <span>고객지원</span>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub6_1.html">공지사항</a></li>
+                <li><a href="./sub6_2.html">고객상담실</a></li>
+                <li><a href="./sub6_3.html">매장안내</a></li>
+                <li><a href="./sub6_4.html" class="current">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fa-solid fa-house"></i> &gt; 고객지원 &gt; <strong>오시는길</strong>
+                </div>
+                <h2>오시는길</h2>
+                <p>국순당을 방문해주셔서 감사합니다.</p>
+            </div>
+            
+            <div class="tabs">
+                <ul class="tab_menu">
+                    <li><a class="tab tab1" href="#map1">본사(횡성양조장)</a></li>
+                    <li><a class="tab tab2" href="#map2">서울사무소</a></li>
+                    <li><a class="tab tab3" href="#map3">연구소</a></li>
+                </ul>
+                    
+                <div class="box">
+                    <section class="contlist">
+                        <div id="map1"></div>
+                        <h3>본사(횡성양조장)</h3>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd><i class="fa-solid fa-location-dot"></i>강원특자치도 횡성군 둔내면 강변로 97</dd>
+                                    <dt>전화</dt>
+                                    <dd><i class="fa-solid fa-phone"></i>02-513-8500</dd>
+                                    <dt>팩스</dt>
+                                    <dd><i class="fa-solid fa-fax"></i>02-402-5210</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><i class="fa-solid fa-car"></i>자가용</dt>
+                                    <dd> 둔내 TG > 삼거리에서 좌회전 후 500m 직진 > 안흥방면 좌회전 후 300m 직진</dd>
+                                </dl>
+                                <dl>
+                                    <dt><i class="fa-solid fa-bus"></i>버스</dt>
+                                    <dd>원주 시외버스 터미널 > 시외버스 (둔내방향) > 둔내 정류장 하차 > 택시 (5분거리)</dd>
+                                </dl>
+                                <dl>
+                                    <dt><i class="fa-solid fa-train-subway"></i>고속철도</dt>
+                                    <dd> KTX 둔내역 > 택시 (5분거리)</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="contlist">
+                        <div id="map2"></div>
+                        <h3>서울사무소</h3>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd><i class="fa-solid fa-location-dot"></i>서울시 강남구 봉은사로 641</dd>
+                                    <dt>전화</dt>
+                                    <dd><i class="fa-solid fa-phone"></i>02-513-8500</dd>
+                                    <dt>팩스</dt>
+                                    <dd><i class="fa-solid fa-fax"></i>02-402-5210</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><i class="fa-solid fa-train-subway"></i><i class="fa-solid fa-bus"></i>대중교통</dt>
+                                    <dd>지하철 9호선 봉은사역 4번 출구 > 450m 직진</dd>
+                                    <dd>지하철 2호선 삼성역 7번 출구 > 버스(1번 마을버스,초록색3417)승차 > 노블발렌티 웨딩홀 앞 하차</dd>
+                                </dl>
+                                <dl>
+                                    <dt><i class="fa-solid fa-car"></i>자가용</dt>
+                                    <dd>경부고속도로 : 반포 ic 종합운동장 방향으로 직진, 교보생명 > 차병원 > 봉은사 > 아셈타워(직진)</dd>
+                                    <dd>서울 서부,강북 지역 : 올림픽대로 영동대교 남단 입체교차로에서 무역센터 방향, 홍실아파트 > 아셈타워 앞 봉은사 사거리에서 좌회전</dd>
+                                    <dd>서울 동남부 지역 : 2호선 삼성역 무역센터 교차로에서 영동대교 방향, 아셈타워 앞 봉은사 사거리에서 우회전</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="contlist">
+                        <div id="map3"></div>
+                        <h3>연구소</h3>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>주소</dt>
+                                        <dd><i class="fa-solid fa-location-dot"></i>경기도 성남시 중원구 사기막골로 137 911-914호</dd>
+                                        <dt>전화</dt>
+                                        <dd><i class="fa-solid fa-phone"></i>031-602-5259</dd>
+                                        <dt>팩스</dt>
+                                        <dd><i class="fa-solid fa-fax"></i>031-602-5850</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-train-subway"></i><i class="fa-solid fa-bus"></i>대중교통</dt>
+                                        <dd>지하철 : 8호선 남한산성역 2번 출구 > 51번 또는 55번 승차 > 종점 하차 (버스 차고지)</dd>
+                                        <dd>버스 : 51번 (분당서울대병원-상대원)<br>
+                                            55번 (모란-상대원)<br>
+                                            3-1번 (상대원대원터널사거리-중원구청-모란경유)<br>
+                                            5번 (사송동-마천동)
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><i class="fa-solid fa-car"></i>자가용</dt>
+                                        <dd>복정역 사거리 > 남한산성 방향 > 황송터널 > 좌회전 > 사기막골 > 국순당연구소</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                    </section>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/subfoot.html" ?>
+
+        <script src="./js/map.js"></script>
+</body>
+</html>

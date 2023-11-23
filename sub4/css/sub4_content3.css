@@ -1,0 +1,71 @@
+/* 회사소개 본문 css */
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+#content .info h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin:100px 0 0 400px; color: #ed8b00;;}
+#content .info>p:nth-of-type(1){font-size: 1.667em; font-weight: 500; padding-bottom: 30px; margin-left: 400px;}
+#content .info span:nth-of-type(1){color: #ed8b00; font-weight: 500;}
+#content .info>p:nth-of-type(2){font-size: 1.333em; font-weight: 400; margin: 0 0 150px 400px;}
+#content .info>a:nth-of-type(1){ width: 130px; height: 30px; position: absolute; right: 400px; top: 114px; text-align: center;}
+#content .info>img:nth-of-type(1){width: 200px; height: 200px; position: absolute; right: 400px; top: 190px; display: block; object-fit: contain;}
+
+#content .info ul{overflow: hidden; margin: 0;}
+#content .info li{width: 2000px; height: 600px; overflow: hidden;}
+#content .info li:nth-of-type(1){position: relative;}
+#content .info img{z-index: -1; position: absolute;}
+#content .info li:nth-of-type(1)>dl{width: 1200px; margin: 100px 150px; color: #fff;}
+#content .info li:nth-of-type(1) dt{font-size: 2.444em; font-weight: 700;}
+#content .info dd:nth-of-type(1){font-size: 1.889em; margin: 50px 0 30px 0; font-weight: 500;}
+#content .info dd:nth-of-type(2){font-size: 1.333em; font-weight: 500;}
+
+#content .info li:nth-of-type(1) a dl{width: 400px; height: 600px; float: right; text-align: right; background: rgba(0, 0, 0, .5); margin: 0 0 0 0; box-sizing: border-box; padding: 50px 50px; transition: all .5s;}
+#content .info li:nth-of-type(1) a dl dt{font-size: 1.667em; margin: 100px 50px 30px 0; font-weight: 500;}
+#content .info li:nth-of-type(1) a dl dd{font-size: 1.111em; margin: 0 50px 30px 0; font-weight: 300;}
+#content .info li:nth-of-type(1) a{width: 500px; height: 650px; font-size: 1em; float: right; display: block; color: #fff; margin-top: -500px; overflow: hidden;}
+#content .info li:nth-of-type(1) a span{font-size: 1.111em; color: #fff; position: absolute; right: 100px; top: 350px; text-align: justify; transition: all .5s;}
+#content .info li:nth-of-type(1) a:hover dl{background: #333;}
+#content .info li:nth-of-type(1) a:hover span{color: #ed8b00;}
+
+
+
+#content .info li:nth-of-type(2){height: 600px; overflow: hidden; width: 1200px; margin: 100px 0 100px 400px; box-shadow: 2px 2px 10px 2px #ccc;} 
+#content .info li:nth-of-type(2) dl{width: 1200px;}
+#content .info li:nth-of-type(2) dt{font-size: 1.389em; font-weight: 700; margin: 60px 0 40px 20px; padding-left: 50px;}
+#content .info li:nth-of-type(2) dd{font-size: 1.111em; margin: 10px 50px; padding: 10px 20px; font-weight: 400; width: 1050px;}
+
+#content .info li:nth-of-type(2) dd:hover{font-weight: 700;}
+
+.highlighter dd{
+    position: relative;
+    transition: all .5s;
+  }
+  .highlighter dd:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0px;
+    height: 50px;
+    margin: 0px 0 0;
+    transform:skewX(-5deg);
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgba(237, 139, 0, .5) 0%, rgba(237, 139, 0, 0) 100%);
+    z-index: -1;
+  }
+  .highlighter dd:hover:after{
+    width: 100%;
+    opacity: 1;
+  }
+
+
+#content .info .growth {margin: 50px 0 0 0;}
+#content .info .growth li{border: 1px solid #ccc; width: 300px; height: 300px; float: left; margin: 0 0 150px 50px; border-radius: 50%; font-size: 1.111em; text-align: center; box-sizing: border-box; padding: 0 50px; box-shadow: 2px 2px 10px 2px #ccc; transition: all .6s; background: rgba(0, 0, 0, .8); color: #fff;}
+#content .info .growth li:nth-of-type(1){margin-left: 500px;}
+#content .info p:nth-of-type(3) {font-size: 1.667em; font-weight: 500; text-align: center;}
+#content .info p:nth-of-type(4){font-size: 1.333em; font-weight: 400; margin: 30px 0 50px 0; text-align: center;}
+#content .info ul:nth-of-type(2) i{font-size: 3.333em; display: block; margin: 70px 0 20px 0; transition: all .5s; color: #ed8b00;}
+
+#content .info .growth li:hover i{color: #333;}
+#content .info .growth li:hover{font-weight: 500; background: #fff; color: #333;}

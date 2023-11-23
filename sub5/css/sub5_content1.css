@@ -1,0 +1,151 @@
+/* 회사소개 본문 css */
+.info{width: 2000px; margin: 0 auto; position: relative;}
+
+.tabs {width:100%;}
+#content .tabs .contlist{display: none;}
+.tabs .tab_menu{width: 1200px; margin: 0 auto; list-style: none; margin-top: 100px; overflow: hidden;}
+.tabs .tab_menu li{width: 33.33%; float: left; margin-bottom: 50px; }
+.tabs .tab_menu a{text-decoration: none; display: block; padding: 15px 0; text-align: center; font-size: 1.389em; background: #f5f5f5; border: 1px solid #fff; border-radius: 5px; color: #ccc;}
+.tabs .tab_menu a:hover{box-shadow: 0 0 0 3px #ed8b00 inset; transition: all .5s;}
+
+#content .ideal{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden; height: 1150px;}
+#content .ideal h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin-top:100px; text-align: center;}
+#content .ideal p:nth-of-type(1){font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+#content .ideal .more{position: absolute; right: 400px; top: 110px;}
+
+.ideal .more {
+    background: #ed8b00;
+    width: 160px;
+    height: 50px;
+    line-height: 2.5em;
+    padding: 0;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.111em;
+    font-weight: 500;
+  }
+  .ideal .more>span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .ideal .more:before,
+  .ideal .more:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .ideal .more:before {
+    height: 0%;
+    width: 2px;
+  }
+  .ideal .more:after {
+    width: 0%;
+    height: 2px;
+  }
+  .ideal .more:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .ideal .more:hover:before {
+    height: 100%;
+  }
+  .ideal .more:hover:after {
+    width: 100%;
+  }
+  .ideal .more span:hover{
+     color: #ed8b00;
+  }
+  .ideal .more span:before,
+  .ideal .more span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .ideal .more>span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .ideal .more>span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .ideal .more>span:hover:before {
+    height: 100%;
+  }
+  .ideal .more>span:hover:after {
+    width: 100%;
+  }
+
+#content .ideal .circle1{background: rgba(255, 255, 255, 1); width: 250px; height: 250px; border-radius: 50%; position: absolute; left: 875px; top: 830px; box-shadow: 2px 2px 10px 2px #ccc; cursor: pointer;}
+#content .ideal .circle1 img{width: 180px; height: 180px; object-fit: contain;}
+#content .ideal .circle1 span{font-size: 1.333em; font-weight: 700; position: absolute; left: 90px; top: 155px;}
+#content .ideal .circle1::before{content: ''; background:url(../common/images/sub_5_1_1.jpg)no-repeat; width: 2000px; height: 600px; position: absolute; left: -850px; top: -455px; z-index: -1;}
+
+.ideal li i{font-size: 2.778em; position: absolute; transition: all .5s; box-sizing: content-box; padding: 40px 40px; border-radius: 50%; width: 50px; height: 50px; cursor: pointer;}
+.ideal .one1 i{position: absolute; left: 730px; top: 840px;}
+.ideal .one2 i{position: absolute; left: 790px; top: 740px;}
+.ideal .one3 i{position: absolute; left: 885px; top: 690px;}
+.ideal .one4 i{position: absolute; right: 885px; top: 690px;}
+.ideal .one5 i{position: absolute; right: 785px; top: 740px;}
+.ideal .one6 i{position: absolute; right: 730px; top: 840px;}
+
+.ideal li img{width: 150px; height: 150px;  object-fit: contain; z-index: -1; transition: all .5s; opacity: .8;}
+.ideal .one1 img{position: absolute; left: 730px; top: 815px;}
+.ideal .one2 img{position: absolute; left: 766px; top: 723px; width: 165px; height: 165px;}
+.ideal .one3 img{position: absolute; left: 857px; top: 688px;}
+.ideal .one4 img{position: absolute; right: 858px; top: 688px;}
+.ideal .one5 img{position: absolute; right: 767px; top: 722px; width: 165px; height: 165px;}
+.ideal .one6 img{position: absolute; right: 730px; top: 810px;width: 152px; height: 155px;}
+
+.ideal li dl{width: 250px; height: 250px; font-size: 1em; text-align: justify;  box-sizing: border-box; padding: 0 30px; transition: all .5s; border-radius: 10px; overflow: hidden; cursor: pointer; user-select : none;}
+.ideal li dl dt{text-align: center; font-size: 1.333em; font-weight: 700; margin: 100px 0 10px 0; transition: all .5s; color: #333;}
+.ideal li dl dd{transition: all .5s; opacity: 0;}
+.ideal .one1 dl{position: absolute; left: 225px; top: 400px;}
+.ideal .one2 dl{position: absolute; left: 485px; top: 400px;}
+.ideal .one3 dl{position: absolute; left: 745px; top: 400px;}
+.ideal .one4 dl{position: absolute; right: 745px; top: 400px;}
+.ideal .one5 dl{position: absolute; right: 485px; top: 400px;}
+.ideal .one6 dl{position: absolute; right: 225px; top: 400px;}
+
+
+.ideal li:hover img{transform: translatey(-20px);}
+.ideal li:hover i{color: #ed8b00; transform: translatey(-20px);}
+.ideal li:hover dl{background: rgba(255, 255, 255, .8); border-radius: 10px; overflow: hidden;}
+.ideal li:hover dt{transform: translateY(-70px); color: #ed8b00;}
+.ideal li:hover dd{font-weight: 500; opacity: 1; transform: translateY(-70px);}
+
+#content .development{width: 1200px; height: 850px; position: relative; padding-bottom: 150px; overflow: hidden;}
+#content .development h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin-top:100px; text-align: center;}
+#content .development p:nth-of-type(1){font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+#content .development ul{overflow: hidden;}
+#content .development li{width: 300px; height: 500px; float: left; margin: 0; transition: all .5s; border-bottom: 5px solid rgba(0, 0, 0, 0); border-top: 5px solid rgba(0, 0, 0, 0);}
+#content .development li:hover{border-bottom: 5px solid #ed8b00; border-top: 5px solid #ed8b00;}
+#content .development dl{margin: 200px 0 0 25px; position: relative; width: 250px; box-sizing: border-box; padding: 0 30px;}
+#content .development dl::before{content: ''; display: block; position: absolute; width: 250px; height: 200px; top: 380px; position: absolute; top: -40px; left: -5px; box-shadow: 0px -15px 15px -20px #333; background: #fff; z-index: -1;}
+#content .development dt:nth-of-type(1){font-size: 7.222em; color: transparent; -webkit-text-fill-color: transparent; position: absolute; top: -230px; left: 50px; font-weight: 700; background-clip: text; -webkit-background-clip: text; background-image: url(../common/images/sub_5_1_3.jpg); background-attachment: fixed; z-index: -2;}
+#content .development dt{font-size: 1.111em; text-align: center; font-weight: 500; margin:50px 0 10px 0; transition: all .5s;}
+#content .development li:hover dt:nth-of-type(2){color: #ed8b00; font-weight: 700;}
+#content .development dd{text-align: justify; color: #666; line-height: 1.5em;}
+
+#content .welfare {width: 1200px; padding-bottom: 150px; overflow: hidden; }
+#content .welfare h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin-top:100px; text-align: center;}
+#content .welfare p:nth-of-type(1){font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+#content .welfare ul{display: flex; flex-wrap: wrap; justify-content: space-around;}
+#content .welfare li{border-radius: 10px; width: 235px; height: 235px; position: relative; transition: all .5s;}
+#content .welfare li::before{content: ''; display: block; position: absolute; width: 235px; height: 235px; border-radius: 10px;}
+#content .welfare li:hover{background: #f5f5f5; box-shadow: 0px 0px 0px 3px #ed8b00 inset; transform: translateY(5px);}
+#content .welfare li:hover i{color: #ed8b00;}
+#content .welfare i{ font-size: 3.056em; border-radius: 50%; width: 80px; height: 80px; padding: 15px 8px 0 10px;  text-align: center; margin: 10px 0 0 65px; transition: all .5s;}
+#content .welfare dl{padding: 0 20px 0 20px;}
+#content .welfare dt{font-size: 1.111em; font-weight: 500; text-align: center; margin: 0px 0; transition: all .3s;}
+#content .welfare li:hover dt{font-weight: 700;}
+#content .welfare dd{font-size: 1.000em; text-align: justify;}

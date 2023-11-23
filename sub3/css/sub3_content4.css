@@ -1,0 +1,250 @@
+/* 회사소개 본문 css */
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px;}
+
+.more {
+    background: #f5f5f5;
+    width: 130px;
+    height: 40px;
+    line-height: 2em;
+    padding: 0;
+    border: none;
+    color: #666;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    position: absolute;
+    top: 450px;
+    left: 250px;
+  }
+  .more span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .more:before,
+  .more:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more:before {
+    height: 0%;
+    width: 2px;
+  }
+  .more:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .more:hover:before {
+    height: 100%;
+  }
+  .more:hover:after {
+    width: 100%;
+  }
+  .more span:hover{
+     color: #ed8b00;
+  }
+  .more span:before,
+  .more span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #ed8b00;
+    transition: all 0.3s ease;
+  }
+  .more span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .more span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .more span:hover:before {
+    height: 100%;
+  }
+  .more span:hover:after {
+    width: 100%;
+  }
+
+.dsn{display: none;}
+
+.dg-container{
+	width: 2000px;
+	height: 700px;
+	position: relative;
+	/* background: orange; */
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.dg-wrapper{
+	height: 500px;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.dg-wrapper li{
+	width: 300px;
+	height: 400px;	
+	display: block;
+	position: absolute;
+	left: 50%;
+  margin-left: -150px;
+	top: 0;
+	/* background: transparent url(../images/browser.png) no-repeat top left; */
+}
+.dg-wrapper .dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper li img{
+	display: block;
+    width: 250px;
+    height: 500px;
+    margin-left: 25px;
+    object-fit: contain;
+	/* padding: 41px 0px 0px 1px; */
+}
+
+.dg-wrapper li dl{
+    text-align: center;
+    margin-top: 30px;
+}
+.dg-wrapper li dt{
+    font-size: 1.111em; font-weight: 500;
+}
+
+.dg-wrapper li dd{
+    font-size: 1em;
+}
+
+
+.dg-wrapper li div{
+	width: 2000px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: -850px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.dg-wrapper .dg-center div{
+	opacity: 1;
+}
+
+.dg-wrapper li div>img:nth-of-type(1){
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    right: 250px;
+}
+
+.dg-wrapper li div>img:nth-of-type(2){
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.dg-wrapper li div p{
+    font-size: 1.333em;
+    font-weight: 500;
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    width: 350px;
+
+}
+
+.dg-wrapper li div dl:nth-of-type(1){
+    width: 350px;
+    position: absolute;
+    top: 320px;
+    right: 150px;
+    text-align: justify;
+}
+
+.dg-wrapper li div dl:nth-of-type(1) dt{
+    font-size: 1.111em;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #a83e3e;
+}
+
+.dg-wrapper li div dl:nth-of-type(1) dd{
+    font-size: 1em;
+    margin-bottom: 24px;
+}
+
+.dg-wrapper li div dl:nth-of-type(2){
+    width: 360px;
+    overflow: hidden;
+    font-size: 0.889em;
+    color: #666;
+    position: absolute;
+    bottom: 220px;
+    left: 140px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.dg-wrapper li div dl:nth-of-type(2) dt{
+    float: left;
+    clear: left;
+    width: 100px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dg-wrapper li div dl:nth-of-type(2) dd{
+    float: left;
+    text-align: center;
+}
+
+
+.dg-wrapper li a{margin-top: 46px;}
+
+
+.dg-container nav{
+	position: absolute;
+	z-index: 1000;
+    bottom: 170px;
+    left: 800px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between
+
+}
+.dg-container nav span{
+}
+.dg-container nav span:hover{
+	opacity: 1;
+}
+.dg-container nav span.dg-next{
+	background-position: top right;
+	margin-left: 10px;
+}
+.dg-container nav span i{font-size: 1.889em; color: #333;}

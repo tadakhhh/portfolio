@@ -1,0 +1,79 @@
+/* 회사소개 본문 css
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+#content .info h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin:100px 0 0 400px; color: #ed8b00;;}
+#content .info>p:nth-of-type(1){font-size: 1.667em; font-weight: 500; padding-bottom: 30px; margin-left: 400px;}
+#content .info span:nth-of-type(1){color: #ed8b00; font-weight: 500;}
+#content .info>p:nth-of-type(2){font-size: 1.333em; font-weight: 400; margin: 0 0 150px 400px;}
+#content .info>a:nth-of-type(1){ width: 130px; height: 30px; position: absolute; right: 400px; top: 114px; text-align: center;}
+#content .info>img:nth-of-type(1){width: 200px; height: 200px; position: absolute; right: 400px; top: 190px; display: block; object-fit: contain;} */
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+.content_area .store{height: 1200px; padding: 100px 0 150px 0; position: relative; }
+.content_area .store::before{content: ''; display: block; background: url(../common/images/city.jpg) center no-repeat; width: 2000px; height: 600px; position: absolute; top: 400px; right: 0px; filter: opacity(90%)}
+.store h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; text-align: center;}
+.store p{font-size: 1.111em; font-weight: 500; padding-bottom: 30px; margin-bottom:100px; padding: 0px; text-align: center;}
+.store .map_search{width: 550px; position: absolute; top: 600px; right: 400px; padding: 20px; text-align: center; color: #fff; text-shadow: 0px 0px 5px #333;}
+.store .map_search dt{padding: 10px; font-size: 1.611em; font-weight: 700;}
+.store .map_search dd{padding: 10px; font-size: 1.333em; font-weight: 500;}
+
+.store .information{width: 590px; position: absolute; top: 350px; right: 400px; height: 700px; overflow: hidden;}
+.store .information .scroll1{width: 590px; height: 50px; text-align: center;}
+.store .information .scroll2{width: 590px; height: 50px; padding: 0; text-align: center;}
+.store .information .scroll1, .scroll2 i{font-size: 30px; padding: 0; color: #ccc;}
+.store .information div{width: 590px;  height: 600px; overflow: hidden;  background: rgba(255, 255, 255, .8);display: none; box-sizing: border-box; padding: 10px;}
+.store .information div p{font-size: 1.611em; color: #ed8b00; font-weight: 700; float: left; margin: 0; width: 100%; box-sizing: border-box; padding: 10px;}
+.store .information div ul{width: 100%; box-sizing: border-box; height: 600px; overflow: hidden; overflow: scroll; -ms-overflow-style: none; }
+.information div ul::-webkit-scrollbar{display:none;}
+.store .information ul li{text-align: center; font-size: 1.111em; text-align: center; border: 1px solid rgba(255, 255, 255, 0); transition: all .3s; overflow: hidden;}
+.store .information ul a{display: block; width: 590px; height: 35px; padding-top: 5px; transition: all .3s; font-size: 1.111em;}
+.store .information ul li:hover a{color: #ed8b00;}
+.store .information ul li .a{height: 100%; box-sizing: border-box; padding: 20px; display: none; width: 100%; background: none;}
+.store .information ul li .a dl{}
+.store .information ul li .a dt{float: left; clear: left; width: 100px; font-weight: 500; text-align: justify; padding: 3px; font-size: 1em; color: #666;}
+.store .information ul li .a dd{float: left; text-align: justify; width: 400px; padding: 3px; font-size: 1em; font-weight: 400; color: #666;}
+
+svg{position: absolute; top: 340px; left: 300px; width: 1200px; height: 1400px; stroke-linejoin: round; fill: #f5f5f5; stroke: #ccc; stroke-width: 1; filter: drop-shadow(2px 2px 5px #666);}
+svg path{cursor: pointer;}
+.bounce
+{@keyframes bounceInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateY(-30px);
+    }
+    80% {
+       transform: translateY(10px);
+    }
+    100% {
+       transform: translateY(0);
+    }
+ } }
+
+
+/* 
+/* .seoul {fill: #f1c40f;}
+
+.gangwon {fill: #2980b9;}
+
+.chungcheong {fill: #9b59b6;}
+
+.yeongnam{fill: #2c3e50;}
+
+.honam {fill: #1abc9c;}
+
+.jeju {fill: red;} */
+
+.TEXT {
+   fill: #333;
+   font-size: 18px;
+   font-weight: 500;
+   box-shadow: none;
+   stroke: none;
+   user-select : none;
+}

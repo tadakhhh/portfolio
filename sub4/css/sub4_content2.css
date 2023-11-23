@@ -1,0 +1,70 @@
+/* 회사소개 본문 css */
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+#content .info>h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin:100px 0 0 400px; color: #ed8b00;}
+#content .info>p:nth-of-type(1){font-size: 1.667em; font-weight: 500; padding-bottom: 30px; margin-left: 400px;}
+#content .info span:nth-of-type(1){color: #ed8b00; font-weight: 500;}
+#content .info>p:nth-of-type(2){font-size: 1.333em; font-weight: 400; margin: 0 0 150px 400px;}
+#content .info>img:nth-of-type(1){width: 220px; height: 220px; position: absolute; right: 400px; top: 130px; display: block; object-fit: contain;}
+
+.social1{position: relative;}
+.social1 li {width: 2000px; height: 600px; overflow: hidden;}
+.social1 li dl{width: 1200px; margin: 100px 150px; color: #fff;}
+.social1 li dt{font-size: 2.444em; font-weight: 700;}
+.social1 li dd{font-size: 1.889em; margin: 50px 0 30px 0; font-weight: 500;}
+.social1 li dd:nth-of-type(2){font-size: 1.333em;}
+.social1 img{position: absolute; display: block; z-index: -1;}
+.social1 li dl:nth-of-type(2), .social1 li dl:nth-of-type(3){width: 400px; height: 301px; float: right; margin: -485px 0 0 0; text-align: right; box-sizing: border-box; padding: 50px 100px 50px 50px; overflow: hidden; transition: all .5s;}
+.social1 li dl:nth-of-type(3){border: 1px red; position: absolute; right: 0; bottom: 1px;}
+.social1 li dl:nth-of-type(2) dt, .social1 li dl:nth-of-type(3) dt{font-size: 1.389em; font-weight: 500; margin-bottom: 10px; color: #ed8b00;}
+.social1 li dl:nth-of-type(2) dd, .social1 li dl:nth-of-type(3) dd{font-size: 1em; font-weight: 400; margin: 0 0 5px 0;}
+.social1 li dl:nth-of-type(2) dd:nth-of-type(1), .social1 li dl:nth-of-type(3) dd:nth-of-type(1){font-weight: 500; font-size: 1.111em;}
+.social1 li dl:nth-of-type(2) a{width: 400px; height: 300px; display: block; position: absolute; right: 0px; top:0px; color: #fff;}
+.social1 li dl:nth-of-type(3) a{width: 400px; height: 300px; display: block; position: absolute; right: 0px; top:0px; color: #fff;}
+.social1 li dl:nth-of-type(2) i, .social1 li dl:nth-of-type(3) i{color: rgba(255, 255, 255, .8); font-size: 2.444em; position: absolute; right: 100px; top: 180px; opacity: 0; transition: all .5s;}
+.social1 li dl:nth-of-type(2):hover, .social1 li dl:nth-of-type(3):hover {background: rgba(0, 0, 0, .5);}
+.social1 li dl:nth-of-type(2) a:hover i, .social1 li dl:nth-of-type(3) a:hover i{opacity: 1;}
+
+
+
+
+.restore .black_box{position: fixed; left: 0; top: 0; z-index: 5; width: 100%; height: 100%; background: #000; opacity: .7; display: none;}
+.restore .popuplist .close{position: absolute; top: 25px; right: 25px; display: block; overflow: hidden; width: 40px; height: 40px;}
+.restore .popuplist .close i{font-size: 40px; margin-left: 5px; color: #fff;}
+
+.restore{width: 1200px; margin: 0 auto; padding: 0px 0 150px 0; position: relative; margin-top: -130px;}
+.restore h3{font-size: 2.444em; font-weight: 700; text-align: center; margin-bottom: 100px;}
+.restore table{width:100%; padding: 0; border: 0; position: relative;}
+.restore table a{display: block; width: 1200px; position: absolute; height: 60px; left: 0; margin-top: -30px; box-sizing: border-box; padding: 15px;}
+
+.restore table caption{height: 130px; font-weight: 500; font-size: 1.889em; text-align: center; background: rgba(0, 0, 0, .8); color: #fff; box-sizing: border-box; padding-top: 40px; }
+
+.restore tr {transition: all .3s;}
+.restore tr:nth-child(n+2):hover{ box-shadow: 0 0 0 3px inset #ed8b00;}
+.restore tr:nth-child(n+2):hover{ color: #ed8b00;}
+.restore tr:nth-child(1){background: rgba(0, 0, 0, .5); color: #fff; font-weight: 500;}
+.restore .menu tr:nth-child(2n){background: #fff;}
+.restore .menu tr:nth-child(2n+3){background: rgba(0, 0, 0, .1);}
+
+.restore th{height: 60px; font-weight: 500; font-size: 1.111em; text-align: center;}
+.restore th:nth-child(1) {width: 150px;}
+.restore th:nth-child(3) {width: 150px;}
+
+.restore td{height: 60px; text-align: center; font-size: 1em; text-align: center;}
+.restore td:nth-child(1) {width: 150px; font-weight: 500; font-size: 1.111em;}
+.restore td:nth-child(3) {width: 150px; font-size: 1em; color: #666;}
+
+tr:nth-child(1) td:first-child, tr:nth-child(1) th:first-child, tr:nth-child(1) td:last-child, tr:nth-child(1) th:last-child{border-radius: 0px;}
+td:first-child, th:first-child{border-radius: 10px 0 0 10px;}
+td:last-child, th:last-child{border-radius: 0 10px 10px 0;}
+
+.restore ul{}
+.restore li{width: 800px; padding: 80px 100px; box-sizing: border-box; background: url(../common/images/sub4_2_3.png) top no-repeat; position: fixed; top: 55%; left: 50%; transform: translate(-50%,-50%); display: none; z-index: 10;}
+.restore li dl:nth-child(1) dt{color: #fff; font-weight: 700; font-size: 1.889em; text-align: center;}
+.restore li dl:first-child dd:nth-of-type(1){color: #333; font-weight: 500; margin: 50px 0 30px 0; font-size: 1.111em; text-align: justify; box-sizing: border-box; padding: 0 15px; text-align: center;}
+.restore li dl:nth-child(2){overflow: hidden; padding: 15px; box-sizing: border-box; margin: 30px 0 30px 0px; color: #666; text-align: justify; font-size: 0.944em; width: 600px; border-radius: 5px; background: #f5f5f5; border-radius: 10px;}
+.restore li dl:nth-child(2) dt{float: left; clear: left; width: 80px; font-weight: 500;}
+.restore li dl:nth-child(2) dd{float: left; width: 470px;}
+.restore li p{text-align: justify; line-height: 1.8em;}
+.restore li p span{color: #ed8b00; font-weight: 500;}

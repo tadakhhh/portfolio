@@ -1,0 +1,18 @@
+/* 기업정보 공통 css */
+
+.visual{width: 2000px; height: 400px; position: relative; left: 50%; margin-left: -1000px; overflow: hidden;}
+.visual span{display: block; font-size: 2em; color: #fff; position: absolute; left: 50%; top: 200px; transform: translate(-50%,0);}
+
+.sub_menu{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_menu ul{width: 1200px; margin: 0 auto; overflow: hidden;}
+.sub_menu ul li{width: 25%; float: left; text-align: center;}
+.sub_menu ul li a{padding: 18px 0; transition: all .5s;}
+.sub_menu ul li:hover a,.sub_menu ul li .current{background: #ed8b00; color: #fff; font-weight: 500;}
+
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{overflow: hidden; position: relative;}
+#content .title_area::after{content: ""; display: block; width: 4px; height: 100px; background: #ed8b00; position: absolute; left: 50%; margin-left: -3px; bottom: 0; border-radius: 5px;}
+#content .title_area .line_map{position: absolute; right: 0; top: 35px; color: #666; font-size: 1.000em;}
+#content .title_area h2{font-size: 2.778em; font-weight: 700; text-align: center; color: #333; margin: 150px 0 40px;}
+#content .title_area p{font-size: 1.389em; text-align: center; margin-bottom: 200px;}
+#content .title_area .line_map i{color: #666; font-size: 1.000em;}

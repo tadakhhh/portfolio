@@ -1,0 +1,14 @@
+/* 회사소개 본문 css */
+#content .title_area::after{content: ""; display: block; width: 4px; height: 100px; background: #ed8b00; position: absolute; left: 50%; margin-left: -3px; bottom: 0; border-radius: 5px; margin-bottom: 100px;}
+
+#content .title_area::after {}
+
+
+#content .info{width: 2000px; position: relative; left: 50%; top: 0; margin-left: -1000px; overflow: hidden;}
+
+#content .info h3{font-size: 2.444em; font-weight: 700; padding-bottom: 30px; margin:100px 0 0 400px; color: #ed8b00;;}
+#content .info>p:nth-of-type(1){font-size: 1.667em; font-weight: 500; padding-bottom: 30px; margin-left: 400px;}
+#content .info span:nth-of-type(1){color: #ed8b00; font-weight: 500;}
+#content .info>p:nth-of-type(2){font-size: 1.333em; font-weight: 400; margin: 0 0 150px 400px;}
+#content .info>a:nth-of-type(1){ width: 130px; height: 30px; position: absolute; right: 400px; top: 114px; text-align: center;}
+#content .info>img:nth-of-type(1){width: 200px; height: 200px; position: absolute; right: 400px; top: 190px; display: block; object-fit: contain;}

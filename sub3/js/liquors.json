@@ -1,0 +1,18 @@
+{
+    "liquors":[
+        {"Logo":"look01.png", "Image":"look1.png", "Name":"백세주", "NameVolume":"용량", "Volume1":95, "Volume2":375, "Volume3":500, "NameLevel":"도수","Level1":13, "NameRaw":"원료", "Raw_material":"설갱미(국산), 전분(러시아산, 헝가리산, 세르비아산, 남아프리카공화국산), 누룩, 인삼, 오미자, 복령, 구기자, 산수유, 산약, 산사자, 수국, 생강, 감초, 황기, 오가피"},
+        {"Logo":"look02.png", "Image":"look2.png", "Name":"백세주 과하", "NameVolume":"용량", "Volume1":500, "NameLevel":"도수", "Level1":18, "NameRaw":"원료", "Raw_material":"쌀(맵쌀), 찹쌀(국내산), 쌀증류소주원액(쌀(국내산)), 오미자(국내산), 복령, 강초, 인삼, 구기자, 수국, 황기, 생각, 계피, 오가피나무"},
+        {"Logo":"look03.png", "Image":"look3.png", "Name":"백세주 담", "NameVolume":"용량", "Volume1":375, "NameLevel":"도수", "Level1":13, "NameRaw":"원료", "Raw_material":"설갱미, 누룩, 감국, 진피, 수국, 산사자, 인삼, 구기자, 산약, 건강, 린덴, 산수유, 오미자, 맥문동"},
+        {"Logo":"look04.png", "Image":"look4.png", "Name":"강장 백세주", "NameVolume":"용량", "Volume1":700, "NameLevel":"도수", "Level1":15, "NameRaw":"원료", "Raw_material":"찹쌀(국산), 10가지 한약재, 전분(러시아산, 헝가리산, 세르비아산)"},
+        {"Logo":"look05.png", "Image":"look5.png", "Name":"자양 백세주", "NameVolume":"용량", "Volume1":700, "NameLevel":"도수", "Level1":15, "NameRaw":"원료", "Raw_material":"설갱미, 6년근 홍삼, 숙지황 등"},
+        {"Logo":"look06.png", "Image":"look6.png", "Name":"국순당 생막걸리", "NameVolume":"용량", "Volume1":750, "NameLevel":"도수", "Level1":6, "NameRaw":"원료", "Raw_material":"백미(수입산) 100%"},
+        {"Logo":"look07.png", "Image":"look7.png", "Name":"국순당 생막걸리(우국생)", "NameVolume":"용량", "Volume1":750, "NameLevel":"도수", "Level1":6, "NameRaw":"원료", "Raw_material":"백미(국내산) 100%"},
+        {"Logo":"look08.png", "Image":"look8.png", "Name":"국순당 쌀막걸리", "NameVolume":"용량", "Volume1":350, "Volume2":750, "NameLevel":"도수", "Level1":5.8, "NameRaw":"원료", "Raw_material":"쌀(국내산/수입산) *2종 판매"},
+        {"Logo":"look09.png", "Image":"look9.png", "Name":"유산균 막걸리", "NameVolume":"용량", "Volume1":750, "NameLevel":"도수", "Level1":5, "NameRaw":"원료", "Raw_material":"쌀, 소맥분(국산)"},
+        {"Logo":"look010.png", "Image":"look10.png", "Name":"프리바이오 막걸리", "NameVolume":"용량", "Volume1":750, "Volume2":350, "NameLevel":"도수", "Level1":5, "NameRaw":"원료", "Raw_material":"쌀, 소맥분(국내산)"},
+        {"Logo":"look011.png", "Image":"look11.png", "Name":"명작 복분자", "NameVolume":"용량", "Volume1":375, "NameLevel":"도수", "Level1":13, "NameRaw":"원료", "Raw_material":"복분자(국내산)"},
+        {"Logo":"look012.png", "Image":"look12.png", "Name":"자연담은 복분자", "NameVolume":"용량", "Volume1":360, "NameLevel":"도수", "Level1":6, "NameRaw":"원료", "Raw_material":"쌀, 복분자(국내산)"},
+        {"Logo":"look013.png", "Image":"look13.png", "Name":"려驪 고구마증류소주", "NameVolume":"용량", "Volume1":75, "Volume2":375, "Volume3":500, "NameLevel":"도수", "Level1":25, "Level2":40,  "NameRaw":"원료","Raw_material":"여주산 고구마 증류원액(국내산)"},
+        {"Logo":"look013.png", "Image":"look14.png", "Name":"려驪 증류소주", "NameVolume":"용량", "Volume1":75, "Volume2":375, "Volume3":500, "NameLevel":"도수", "Level1":25, "Level2":40,  "NameRaw":"원료","Raw_material":"여주산 고구마 증류원액, 여주산 쌀 증류원액(국내산)"}
+    ]
+}
